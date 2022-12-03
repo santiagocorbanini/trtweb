@@ -1,0 +1,43 @@
+.form-control {
+    padding-bottom: 10px!important;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.form-control:focus {
+    background: transparent;
+}
+
+#contactForm {
+    color: black;
+}
+
+#text-area {
+    min-height: 200px;
+}
+
+#submitButton {
+    width: 100%;
+    font-weight: bold;
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    mix-blend-mode: screen;
+}
+
+.btn-primary:hover {
+    opacity: 90%;
+    transition:220ms ease-in;
+}
+
+#contact {
+    background-image: url("../../assets/img/fondo-contacto.svg");;
+}
+
+.redes-contact {
+    width: 200px;
+    margin-bottom: 50px;
+}
+label {  
+    color: white;
+}

@@ -1,0 +1,68 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import '../components/Artistas/styles.module.scss';
+@import '../components/Contacto/styles.module.scss';
+@import '../components/Convocatoria/styles.module.scss';
+@import '../components/Eventos/styles.module.scss';
+@import '../components/Footer/styles.module.scss';
+@import '../components/Nav/styles.module.scss';
+@import '../components/Nosotros/styles.module.scss';
+@import '../components/Trabajos/styles.module.scss';
+@import '../components/Servicios/styles.module.scss';
+
+@font-face {
+    font-family: "YRT Lucky Dog";
+    src: url(../../src/assets/font/YRTLuckyDog.otf);
+}
+
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+
+:root {
+    --FirstColor: #ff254d;
+    --BlackColor: #000000;
+    --WhiteColor: #fbfbfb;
+    --Principal-fuente: 'Montserrat', sans-serif;
+    --Secundaria-fuente: "YRT Lucky Dog";  
+}
+
+html,
+body {
+    font-family: var(--Principal-fuente);
+    box-sizing: border-box;
+    background-image: url(../assets/img/fondo.png);
+    color: var(--WhiteColor);
+}
+
+.h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    font-family: var(--Secundaria-fuente);
+    color: var(--FirstColor);
+}
+
+.page-section {
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+p {
+    font-size: 12px;
+}
+.container-body {
+    padding-right: var(--bs-gutter-x, 7.75rem);
+    padding-left: var(--bs-gutter-x, 7.75rem);
+}
+
+@media only screen and (max-width:1224px) {
+    .container-body {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+  }
+
+// Definir estilos de botónes 
+
+.btn-primary {
+    color: #ff254d!important;
+    background-color: white!important;
+}

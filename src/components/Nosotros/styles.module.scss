@@ -1,0 +1,23 @@
+.row-nosotros {
+    justify-content: center;
+}
+.nosotros {
+    width: 55%;
+}
+.col-lg-3 > img{
+    margin-bottom: 20px;
+}
+
+.justify-content-center {
+    justify-content: space-around !important;
+}
+
+@media only screen and (max-width:992px){
+    .nosotros {
+        width: 100%; 
+    }
+    .container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}

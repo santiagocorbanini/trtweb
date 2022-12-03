@@ -1,0 +1,11 @@
+:root {
+  --dark-blue: #084298;
+}
+
+html,
+body {
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+  background-image: url(../assets/img/fondo.png);
+}
+/*# sourceMappingURL=main.css.map */

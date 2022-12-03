@@ -1,0 +1,70 @@
+.meses {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+.eventos {
+    flex-direction: row;
+    display: flex;
+}
+.eventos-mes {
+    font-size: 72px;
+    font-family: 'YRT Lucky Dog';
+    width: 250px;
+    height: 200px;
+}
+.artista-nombre {
+    font-size: 44px;
+    font-family: 'Montserrat';
+    font-weight:700;
+    height: 140px;
+}
+.evento-1 {
+    width: 230px;
+    word-wrap: break-word;
+    margin-right: 30px;
+    
+}
+.meses {
+    margin-bottom: 40px;
+    justify-content: flex-start;
+}
+.lugar-nombre {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    padding-left: 5px;
+}
+.lugar-fecha {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    padding-left: 5px;
+}
+.lugar-div {
+    display: flex;
+    align-items: end;
+    flex-direction: row;
+    align-items: center;
+}
+a {
+    width: 100%;
+    display: contents;
+    
+}
+.lugar-div-entrada:hover {
+    opacity: 70%;
+}
+@media only screen and (max-width:992px){
+    .meses {
+        display: flex;
+        flex-direction: column;
+    }
+    .eventos-mes {
+        height: 100px
+    }
+}
