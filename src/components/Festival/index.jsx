@@ -1,11 +1,11 @@
-const Convocatoria = () => {
+const Festival = () => {
     return (
         <section
             className="page-section text-white mb-0 text-center"
-            id="convocatoria"
+            id="festival"
         >
             <div className="container d-flex align-items-center justify-content-center mb-4">
-                <h2>Convocatoria de bandas</h2>
+                <h2>Festival</h2>
             </div>
 
             <div className="container">
@@ -35,4 +35,4 @@ const Convocatoria = () => {
     )
 }
 
-export default Convocatoria
+export default Festival

@@ -39,7 +39,7 @@ export const Nosotros = () => {
                 </div>
 
                 <div className="row justify-content-center">
-                    <div class="col-lg-3">
+                    <div className="col-lg-3">
                         
                         <img
                                 src={somos1}
@@ -77,7 +77,7 @@ export const Nosotros = () => {
                         <p></p>
                         <p>agustin@2222agencia.com</p>
                     </div>
-                    <div class="col-lg-3">
+                    <div className="col-lg-3">
 
                         <img
                                 src={somos2}
@@ -135,7 +135,7 @@ export const Nosotros = () => {
                         <p></p>
                         <p>luciano@2222agencia.com</p>
                     </div>
-                    <div class="col-lg-3">
+                    <div className="col-lg-3">
 
                         <img
                                 src={somos3}

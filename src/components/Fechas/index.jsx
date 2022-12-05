@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import iconoInstagram from "../../assets/img/icono-instagram.svg"
 import iconoSpotify from "../../assets/img/icono-spotify.svg"
 
-const Artistas = () => {
+const Fechas = () => {
     const [show, setShow] = useState("")
 
     const handleClick = () => {
@@ -38,7 +38,7 @@ const Artistas = () => {
             <div className="container container-body">
                 {/*<!-- Portfolio Section Heading-->*/}
                 <h2 className="page-section-heading text-center mb-4">
-                    Artistas
+                    Fechas
                 </h2>
 
                 {/*<!-- Portfolio Grid Items-->*/}
@@ -293,4 +293,4 @@ const Artistas = () => {
     )
 }
 
-export default Artistas
+export default Fechas

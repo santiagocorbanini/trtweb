@@ -33,6 +33,30 @@ const Nav = () => {
                 />
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav">
+                    <li className="nav-link mx-0 mx-lg-1">
+                            {isTabletOrMobile ? (
+                                <button
+                                    className="nav-link"
+                                    onClick={() => {
+                                        navigate("/inicio")
+                                    }}
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navbarResponsive"
+                                >
+                                    Inicio
+                                </button>
+                            ) : (
+                                <button
+                                    className="nav-link"
+                                    onClick={() => {
+                                        navigate("/inicio")
+                                    }}
+                                >
+                                    Inicio
+                                </button>
+                            )}
+                        </li>
+
                         <li className="nav-link mx-0 mx-lg-1">
                             {isTabletOrMobile ? (
                                 <>
@@ -58,49 +82,27 @@ const Nav = () => {
                                 </button>
                             )}
                         </li>
+                
                         <li className="nav-link mx-0 mx-lg-1">
                             {isTabletOrMobile ? (
                                 <button
                                     className="nav-link"
                                     onClick={() => {
-                                        navigate("/servicios")
+                                        navigate("/fechas")
                                     }}
                                     data-bs-toggle="collapse"
                                     data-bs-target="#navbarResponsive"
                                 >
-                                    Servicios
+                                    Fechas
                                 </button>
                             ) : (
                                 <button
                                     className="nav-link"
                                     onClick={() => {
-                                        navigate("/servicios")
+                                        navigate("/fechas")
                                     }}
                                 >
-                                    Servicios
-                                </button>
-                            )}
-                        </li>
-                        <li className="nav-link mx-0 mx-lg-1">
-                            {isTabletOrMobile ? (
-                                <button
-                                    className="nav-link"
-                                    onClick={() => {
-                                        navigate("/artistas")
-                                    }}
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#navbarResponsive"
-                                >
-                                    Artistas
-                                </button>
-                            ) : (
-                                <button
-                                    className="nav-link"
-                                    onClick={() => {
-                                        navigate("/artistas")
-                                    }}
-                                >
-                                    Artistas
+                                    Fechas
                                 </button>
                             )}
                         </li>
@@ -169,21 +171,21 @@ const Nav = () => {
                                 <button
                                     className="nav-link"
                                     onClick={() => {
-                                        navigate("/convocatoria")
+                                        navigate("/festival")
                                     }}
                                     data-bs-toggle="collapse"
                                     data-bs-target="#navbarResponsive"
                                 >
-                                    Convocatoria
+                                    Festival
                                 </button>
                             ) : (
                                 <button
                                     className="nav-link"
                                     onClick={() => {
-                                        navigate("/convocatoria")
+                                        navigate("/festival")
                                     }}
                                 >
-                                    Convocatoria
+                                    Festival
                                 </button>
                             )}
                         </li>

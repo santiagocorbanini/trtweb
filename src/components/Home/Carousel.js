@@ -1,4 +1,4 @@
-import convocatoria from "../../assets/img/convocatoria.png"
+import festival from "../../assets/img/festival.png"
 import imagen1 from "../../assets/img/guaso.jpg"
 import imagen3 from "../../assets/img/fundamentalista.jpg"
 import imagen22 from "../../assets/img/cruzando2.jpg"

@@ -1,4 +1,4 @@
-const Servicios = () => {
+const Inicio = () => {
     return (
         <section className="page-section text-white mb-0 text-center" id="services">
             <div className="container container-body">
@@ -133,4 +133,4 @@ La confianza acumulada en años de prestigiosa labor, permite a nuestra agencia
     )
 }
 
-export default Servicios
+export default Inicio

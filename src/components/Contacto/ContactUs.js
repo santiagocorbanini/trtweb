@@ -33,11 +33,11 @@ export const ContactUs = () => {
             return false
         }
 
-        if (form.current.telefono.value === "") {
-            error("Por favor, ingresá tu número de teléfono")
-            form.current.telefono.focus()
-            return false
-        }
+        //if (form.current.telefono.value === "") {
+        //    error("Por favor, ingresá tu número de teléfono")
+        //    form.current.telefono.focus()
+        //    return false
+        //}
 
         if (form.current.mensaje.value === "") {
             error("Por favor, ingresá un mensaje")
@@ -49,11 +49,11 @@ export const ContactUs = () => {
             error("Por favor, escribe un correo electrónico válido")
             form.current.email.focus()
             return false
-        }
-        if (!telefonoValido(form.current.telefono.value)) {
-            error("Por favor, escribe un número de teléfono válido")
-            form.current.telefono.focus()
-            return false
+        //}
+        //if (!telefonoValido(form.current.telefono.value)) {
+        //    error("Por favor, escribe un número de teléfono válido")
+        //    form.current.telefono.focus()
+        //    return false
         } else {
             emailjs
                 .sendForm(
