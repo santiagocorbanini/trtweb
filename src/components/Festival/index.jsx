@@ -1,36 +1,26 @@
+import ciro from "../../assets/images/ciro1.jpg"
+import cris from "../../assets/images/cristianpinto.jpg"
+
 const Festival = () => {
     return (
-        <section
-            className="page-section text-white mb-0 text-center"
-            id="festival"
-        >
-            <div className="container d-flex align-items-center justify-content-center mb-4">
-                <h2>Festival</h2>
+        <section className="container-fluid">
+            <div className="row g-0">
+                <div className="col-sm">
+                    <img src={ciro} alt='ciro' className="w-100"/>
+                </div>
+                <div className="col-sm">
+                    <img src={cris} alt='ciro' className="w-100"/>
+                </div>
+            </div>
+            <div className="row g-0">
+                <div className="col-sm">
+                    <img src={cris} alt='ciro' className="w-100"/>
+                </div>
+                <div className="col-sm">
+                    <img src={ciro} alt='ciro' className="w-100"/>
+                </div>
             </div>
 
-            <div className="container">
-                <p className="px-2 text-center">
-                    Buscamos bandas o solistas independientes para importante
-                    proyecto musical.
-                </p>
-                <p className="px-2 text-center">
-                    No importa de que parte del mundo seas, envianos tu info
-                    entrando al link.
-                </p>
-            </div>
-            <button
-                className="btn btn-convocatoria btn-xl"
-                id="submitConvocatoria"
-                type="submit"
-                onClick={() => {
-                    window.open(
-                        "https://docs.google.com/forms/d/1aAyUGXDJLOVD8ADqXsVkYU5GgLlrbG1VgjRKr5UA308/edit",
-                        "_blank"
-                    )
-                }}
-            >
-                link de registro
-            </button>
         </section>
     )
 }

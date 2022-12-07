@@ -27,7 +27,7 @@ const Nav = () => {
                 width={90}
                 height={15}
                 onClick={() => {
-                    navigate("/nosotros")
+                    navigate("/festival")
                 }}
             />
             <img
@@ -37,7 +37,7 @@ const Nav = () => {
                 width={132}
                 height={23}
                 onClick={() => {
-                    navigate("/nosotros")
+                    navigate("/festival")
                 }}
             /> */}
             <div className="collapse navbar-collapse" id="navbarResponsive">
@@ -72,7 +72,7 @@ const Nav = () => {
                                 <button
                                     className="nav-link"
                                     onClick={() => {
-                                        navigate("/nosotros")
+                                        navigate("/festival")
                                     }}
                                     data-bs-toggle="collapse"
                                     data-bs-target="#navbarResponsive"
@@ -84,7 +84,7 @@ const Nav = () => {
                             <button
                                 className="nav-link"
                                 onClick={() => {
-                                    navigate("/nosotros")
+                                    navigate("/festival")
                                 }}
                             >
                                 Festival
@@ -149,7 +149,7 @@ const Nav = () => {
                                 data-bs-toggle="collapse"
                                 data-bs-target="#navbarResponsive"
                             >
-                                Nosotros
+                                festival
                             </button>
                         ) : (
                             <button
@@ -158,7 +158,7 @@ const Nav = () => {
                                     navigate("/festival")
                                 }}
                             >
-                                Nosotros
+                                festival
                             </button>
                         )}
                     </li>

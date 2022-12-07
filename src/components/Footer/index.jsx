@@ -56,7 +56,7 @@ const Footer = () => {
                             <i className="fas fa-envelope"></i>
                         </a>
                     </div>
-                    {/*<!-- Footer Nosotros Text-->*/}
+                    {/*<!-- Footer festival Text-->*/}
                     <div className="col-lg-6">
                         <img src={newLogo} alt="2222 Agencia" width={100} />
                         <p className="lead mb1">Barcelona, España.</p>

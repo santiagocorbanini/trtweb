@@ -8,7 +8,6 @@ import Fechas from "./components/Fechas"
 import Inicio from "./components/Inicio"
 import Festival from "./components/Festival"
 import Trabajos from "./components/Trabajos"
-import Nosotros from "./components/Nosotros"
 import Contacto from "./components/Contacto"
 import Footer from "./components/Footer"
 
@@ -17,13 +16,12 @@ const App = () => {
         <>
             <Nav />
             <Routes>
-                <Route index path="" element={<Nosotros />} />
+                <Route index path="" element={<Festival />} />
                 <Route path="eventos" element={<Eventos />} />
                 <Route path="fechas" element={<Fechas />} />
                 <Route path="inicio" element={<Inicio />} />
                 <Route path="festival" element={<Festival />} />
                 <Route path="trabajos" element={<Trabajos />} />
-                <Route path="nosotros" element={<Nosotros />} />
                 <Route path="contacto" element={<Contacto />} />
             </Routes>
             <Footer />
