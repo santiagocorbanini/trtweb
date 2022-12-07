@@ -37,15 +37,17 @@
 
 .nav-link {
   color: var(--WhiteColor);
-  font-weight: 600;
+  font-weight: 200;
+  font-size: .85em;
+  text-transform: uppercase;
   padding-right: 0rem !important;
   padding-left: 0rem !important;
 }
 .nav-link:active {
-    color: #ca1435 !important;
+    color: #bbbbbb !important;
 }
 .nav-link:hover {
-  color: (var(--FirstColor));
+  color: (#a4a4a4);
 }
 .nav-link:focus {
     color: white;
