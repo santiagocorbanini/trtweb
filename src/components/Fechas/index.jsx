@@ -2,13 +2,12 @@ import ToggleDisplay from "react-toggle-display"
 import { useState } from "react"
 import { MediaQueries } from "../../const/BreakpointsMediaQueries"
 import ValentinaOlguin from "../../assets/img/artistas/Valentina-Olguin-22_22.png"
-import MorusAlba from "../../assets/img/artistas/Morus-Alba-22_22.png"
-import PolinaGrace from "../../assets/img/artistas/Polina-Grace-22_22.png"
-import Kanela from "../../assets/img/artistas/Kanela-22_22.png"
-import TheColorFools from "../../assets/img/artistas/The-Colour-Fools-22_22.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import iconoInstagram from "../../assets/img/icono-instagram.svg"
 import iconoSpotify from "../../assets/img/icono-spotify.svg"
+import ciro from "../../assets/images/ciro1.jpg"
+import cris from "../../assets/images/cristianpinto.jpg"
+import verEvento from "../../assets/img/verEvento.svg"
 
 const Fechas = () => {
     const [show, setShow] = useState("")
@@ -34,12 +33,42 @@ const Fechas = () => {
     const { isTabletOrMobile } = MediaQueries()
 
     return (
-        <section className="page-section portfolio bg-secundary" id="Artistas">
-            <div className="container container-body">
-                {/*<!-- Portfolio Section Heading-->*/}
-                <h2 className="page-section-heading text-center mb-4">
-                    Fechas
-                </h2>
+            <section className="container-fluid">
+                <div className="row g-0">
+                    <div className="col-sm w-100 h-100" id="ciro">
+                        <h1 className="m-2 title-artist">CIRO Y LOS PERSAS</h1>
+                        <h4 className="m-2 title-artist">4 de Octubre / Barcelona Tour</h4>
+                        <a href="https://www.instagram.com/2222agencia/" target={"_blank"} rel={"noreferrer"}>
+                            <img
+                                src={verEvento}
+                                width={60}
+                                height={60}
+                                alt={verEvento}
+                            />
+                        </a>
+                    </div>
+                    <div className="col-sm w-100 h-100" id="ciro">
+                        <h1 className="m-2 title-artist">CIRO Y LOS PERSAS</h1>
+                        <h4 className="m-2 title-artist">4 de Octubre / Barcelona Tour</h4>
+                        <a href="https://www.instagram.com/2222agencia/" target={"_blank"} rel={"noreferrer"}>
+                            <img
+                                src={verEvento}
+                                width={60}
+                                height={60}
+                                alt={verEvento}
+                            />
+                        </a>    
+                    </div>
+                </div>
+                <div className="row g-0">
+                    <div className="col-sm">
+                        <img src={cris} alt='ciro' className="w-100"/>
+                    </div>
+                    <div className="col-sm">
+                        <img src={ciro} alt='ciro' className="w-100"/>
+                    </div>
+                </div>
+
 
                 {/*<!-- Portfolio Grid Items-->*/}
                 <div className="row justify-content-center">
@@ -73,222 +102,9 @@ const Fechas = () => {
                                     <img src={iconoSpotify} width={40} height={40}/>
                                 </a>
                             </div>
-                            {/*
-                            {isTabletOrMobile ? (
-                                <>
-                                    <button
-                                        className="btn btn-primary m-4 px-4 py-2"
-                                        data-bs-toggle="collapse"
-                                        href="#artista1"
-                                        aria-expanded="false"
-                                        aria-controls="artista1"
-                                    >
-                                        Ver Más
-                                    </button>
-                                    <ToggleDisplay show={!show}>
-                                        <div
-                                            class="collapse multi-collapse"
-                                            id="artista1"
-                                        >
-                                            <p>
-                                                Su carrera como solista comienza
-                                                editando el disco Espejos
-                                                recibiendo buenas críticas y
-                                                ventas. En 2010, nuevamente le
-                                                toca ser soporte, esta vez del
-                                                artista solista más exitoso del
-                                                mundo en la historia de la
-                                                música popular (según el Libro
-                                                Guiness de los Records), Paul
-                                                McCartney. Este, tras escuchar
-                                                todos las de artistas que tenía
-                                                como opciones soporte para sus
-                                                shows en Argentina en 2010
-                                                decidió quedarse con Ciro.2​
-                                            </p>
-                                            <div className="container d-flex justify-content-center p-5">
-                                                <a
-                                                    href="https://www.instagram.com/valentinaolguin_/"
-                                                    target={"_blank"}
-                                                    rel={"noreferrer"}
-                                                    src={iconoInstagram} width={30} height={30}
-                                                >
-                                                    <img src={iconoInstagram} width={30} height={30}/>
-                                                </a>
-                                                <a
-                                                    href="https://open.spotify.com/artist/4bFcNlqngm7XibeU7HW3IR?si=6MER-jh3SaGndPTuqdc3gQ"
-                                                    target={"_blank"}
-                                                    rel={"noreferrer"}
-                                                >
-                                                    <FontAwesomeIcon
-                                                        icon="fa-brands fa-spotify"
-                                                        size="3x"
-                                                        id="icon"
-                                                        color="#ff254d"
-                                                    />
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </ToggleDisplay>
-                                </>
-                            ) : (
-                                <div>
-                                    <p>
-                                        Su carrera como solista comienza
-                                        editando el disco Espejos recibiendo
-                                        buenas críticas y ventas. En 2010,
-                                        nuevamente le toca ser soporte, esta vez
-                                        del artista solista más exitoso del
-                                        mundo en la historia de la música
-                                        popular (según el Libro Guiness de los
-                                        Records), Paul McCartney. Este, tras
-                                        escuchar todos las de artistas que tenía
-                                        como opciones soporte para sus shows en
-                                        Argentina en 2010 decidió quedarse con
-                                        Ciro.2​
-                                    </p>
-                                    <div className="container d-flex justify-content-around">
-                                        <a
-                                            href="https://www.instagram.com/valentinaolguin_/"
-                                            target={"_blank"}
-                                            rel={"noreferrer"}
-                                        >
-                                            <img src={iconoInstagram} width={40} height={40}/>
-                                        </a>
-                                        <a
-                                            href="https://open.spotify.com/artist/4bFcNlqngm7XibeU7HW3IR?si=6MER-jh3SaGndPTuqdc3gQ"
-                                            target={"_blank"}
-                                            rel={"noreferrer"}
-                                        >
-                                            <FontAwesomeIcon
-                                                icon="fa-brands fa-spotify"
-                                                size="2x"
-                                                id="icon"
-                                                color="#ff254d"
-                                            />
-                                        </a>
-                                    </div>
-                                </div>
-                            )}
-                            */}
                         </div>
                     </div>
-                    {/*<!-- END Portfolio Item 1 -->*/}
-                    {/*<!-- Portfolio Item 2 -->*/}
-                    <div className="col-md-6 col-lg-3 text-center">
-                        <div className="portfolio-item mx-auto">
-                            <img
-                                className="img-fluid"
-                                src={MorusAlba}
-                                width={400}
-                                alt="..."
-                            />
-                            <h4 className="m-2 title-artist">Morus<br />Alba</h4>
-                            <div className="redes-sociales container d-flex justify-content-around">
-                                        <a
-                                            href="https://www.instagram.com/morus.alba.wav/"
-                                            target={"_blank"}
-                                            rel={"noreferrer"}
-                                        >
-                                            <img src={iconoInstagram} width={40} height={40}/>
-                                        </a>
-                                        <a
-                                            href="https://open.spotify.com/artist/2TtsYaNj41ilhQDMNuAb5w?si=sG6Tai5xTbqaq9m0VOA_dw"
-                                            target={"_blank"}
-                                            rel={"noreferrer"}
-                                        >
-                                            <img src={iconoSpotify} width={40} height={40}/>
-                                        </a>
-                            </div>
-                        </div>
-                    </div>
-                    {/*<!-- END Portfolio Item 2 -->*/}
-                    {/*<!-- Portfolio Item 3 -->*/}
-                    <div className="col-md-6 col-lg-3 text-center">
-                        <div className="portfolio-item mx-auto">
-                            <img
-                                className="img-fluid"
-                                src={PolinaGrace}
-                                alt="..."
-                            />
-                            <h4 className="m-2 title-artist">Polina<br />Grace</h4>
-                            <div className="redes-sociales container d-flex justify-content-around">
-                                        <a
-                                            href="https://www.instagram.com/morus.alba.wav/"
-                                            target={"_blank"}
-                                            rel={"noreferrer"}
-                                        >
-                                            <img src={iconoInstagram} width={40} height={40}/>
-                                        </a>
-                                        <a
-                                            href="https://open.spotify.com/artist/2TtsYaNj41ilhQDMNuAb5w?si=sG6Tai5xTbqaq9m0VOA_dw"
-                                            target={"_blank"}
-                                            rel={"noreferrer"}
-                                        >
-                                            <img src={iconoSpotify} width={40} height={40}/>
-                                        </a>
-                            </div>
-                        </div>
-                    </div>
-                    {/*<!-- END Portfolio Item 3 -->*/}
-                    {/*<!-- Portfolio Item 4 -->*/}
-                    <div className="col-md-6 col-lg-3 text-center">
-                        <div className="portfolio-item mx-auto">
-                            <img
-                                className="img-fluid"
-                                src={Kanela}
-                                alt="..."
-                            />
-                            <h4 className="m-2 title-artist">Kanela</h4>
-                            <div className="redes-sociales container d-flex justify-content-around">
-                                        <a
-                                            href="https://www.instagram.com/morus.alba.wav/"
-                                            target={"_blank"}
-                                            rel={"noreferrer"}
-                                        >
-                                            <img src={iconoInstagram} width={40} height={40}/>
-                                        </a>
-                                        <a
-                                            href="https://open.spotify.com/artist/2TtsYaNj41ilhQDMNuAb5w?si=sG6Tai5xTbqaq9m0VOA_dw"
-                                            target={"_blank"}
-                                            rel={"noreferrer"}
-                                        >
-                                            <img src={iconoSpotify} width={40} height={40}/>
-                                        </a>
-                            </div>
-                        </div>
-                    </div>
-                    {/*<!-- END Portfolio Item 4 -->*/}
-                    {/*<!-- Portfolio Item 5 -->*/}
-                    <div className="col-md-6 col-lg-3 text-center">
-                        <div className="portfolio-item mx-auto">
-                            <img
-                                className="img-fluid"
-                                src={TheColorFools}
-                                alt="..."
-                            />
-                            <h4 className="m-2 title-artist">The Color Fools</h4>
-                            <div className="redes-sociales container d-flex justify-content-around">
-                                        <a
-                                            href="https://www.instagram.com/morus.alba.wav/"
-                                            target={"_blank"}
-                                            rel={"noreferrer"}
-                                        >
-                                            <img src={iconoInstagram} width={40} height={40}/>
-                                        </a>
-                                        <a
-                                            href="https://open.spotify.com/artist/2TtsYaNj41ilhQDMNuAb5w?si=sG6Tai5xTbqaq9m0VOA_dw"
-                                            target={"_blank"}
-                                            rel={"noreferrer"}
-                                        >
-                                            <img src={iconoSpotify} width={40} height={40}/>
-                                        </a>
-                            </div>
-                        </div>
-                    </div>
-                    {/*<!-- END Portfolio Item 5 -->*/}
                 </div>
-            </div>
         </section>
     )
 }

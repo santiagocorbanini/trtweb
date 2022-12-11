@@ -14,8 +14,8 @@ const Hero = () => {
                             srcSet=""
                         />
                     </div>
-                    {/*<!-- festival Descripcion -->*/}
-                    <div className="col-lg-6 align-self-center" id="festival">
+                    {/*<!-- Nosotros Descripcion -->*/}
+                    <div className="col-lg-6 align-self-center" id="nosotros">
                         <div>
                             <h3 class="text-center text-uppercase  mb-4 ">
                                 Titulo para poner

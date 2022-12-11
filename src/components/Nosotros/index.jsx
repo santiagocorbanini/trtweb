@@ -4,17 +4,17 @@ import somos3 from "../../assets/img/somos1.png"
 
 import React from "react"
 
-export const festival = () => {
+export const Nosotros = () => {
     return (
         <section
             className="page-section text-white mb-0 text-center"
             id="about"
         >
-            {/*<!-- Imagen festival-->*/}
+            {/*<!-- Imagen nosotros-->*/}
             <div className="container">
-                <div className="row row-festival">
-                    {/*<!-- festival Descripcion -->*/}
-                    <div className="festival">
+                <div className="row row-nosotros">
+                    {/*<!-- nosotros Descripcion -->*/}
+                    <div className="nosotros">
                         <div>
                             <p className="px-2 text-center">
                                 22:22 es el puente artístico entre Latinoamérica
@@ -172,4 +172,4 @@ export const festival = () => {
     )
 }
 
-export default festival
+export default Nosotros

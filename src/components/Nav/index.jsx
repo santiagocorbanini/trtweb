@@ -1,4 +1,4 @@
-import logo from "../../assets/img/logo-2222.svg"
+import logo from "../../assets/img/trtLogo.svg"
 import newLogo from "../../assets/img/logonew2222.png"
 import { useNavigate } from "react-router-dom"
 import { MediaQueries } from "../../const/BreakpointsMediaQueries"
@@ -20,12 +20,12 @@ const Nav = () => {
             >
                 =
             </button>
-{/*             <img
+             <img
                 src={logo}
                 alt={logo}
                 id="logo-responsive"
                 width={90}
-                height={15}
+                height={45}
                 onClick={() => {
                     navigate("/festival")
                 }}
@@ -35,11 +35,11 @@ const Nav = () => {
                 alt={logo}
                 id="logo"
                 width={132}
-                height={23}
+                height={40}
                 onClick={() => {
                     navigate("/festival")
                 }}
-            /> */}
+            />
             <div className="collapse navbar-collapse" id="navbarResponsive">
                 <ul className="navbar-nav">
                     <li className="nav-link mx-0 mx-lg-1">
@@ -144,21 +144,21 @@ const Nav = () => {
                             <button
                                 className="nav-link"
                                 onClick={() => {
-                                    navigate("/festival")
+                                    navigate("/nosotros")
                                 }}
                                 data-bs-toggle="collapse"
                                 data-bs-target="#navbarResponsive"
                             >
-                                festival
+                                Nosotros
                             </button>
                         ) : (
                             <button
                                 className="nav-link"
                                 onClick={() => {
-                                    navigate("/festival")
+                                    navigate("/nosotros")
                                 }}
                             >
-                                festival
+                                Nosotros
                             </button>
                         )}
                     </li>
@@ -183,6 +183,30 @@ const Nav = () => {
                                 }}
                             >
                                 Contacto
+                            </button>
+                        )}
+                    </li>
+                    <li className="nav-link mx-0 mx-lg-1">
+                        {isTabletOrMobile ? (
+                            <button
+                                className="nav-link"
+                                onClick={() => {
+                                    navigate("/acreditacion")
+                                }}
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarResponsive"
+                            >
+                                Acreditacion
+                            </button>
+                        ) : (
+                            <button
+                                className="nav-link"
+                                id="contact-buton"
+                                onClick={() => {
+                                    navigate("/acreditacion")
+                                }}
+                            >
+                                Acreditacion
                             </button>
                         )}
                     </li>

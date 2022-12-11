@@ -6,7 +6,7 @@ import iconoSpotify from "../../assets/img/icono-spotify-contacto.svg"
 import iconoYoutube from "../../assets/img/icono-youtube-contacto.svg"
 
 
-export const ContactUs = () => {
+export const AcreditacionUs = () => {
     const form = useRef()
 
     const emailVálido = (email) => {
@@ -99,31 +99,15 @@ export const ContactUs = () => {
         <section className="page-section" id="contact">
             <div className="container">
                 {/*<!-- reeemplazar con iconos con fondo blanco y sus hrefs -->*/}
-                <div className="redes-contact container d-flex justify-content-center">
-                    <a href="https://www.instagram.com/2222agencia/" target={"_blank"} rel={"noreferrer"}>
-                        <img
-                            src={iconoInstagram}
-                            width={40}
-                            height={40}
-                            alt={iconoInstagram}
-                        />
-                    </a>
-                    <a href="https://www.instagram.com/2222agencia/" target={"_blank"} rel={"noreferrer"}>
-                        <img
-                            src={iconoSpotify}
-                            width={40}
-                            height={40}
-                            alt={iconoSpotify}
-                        />
-                    </a>
-                    <a href="https://www.instagram.com/2222agencia/" target={"_blank"} rel={"noreferrer"}>
-                        <img
-                            src={iconoYoutube}
-                            width={40}
-                            height={40}
-                            alt={iconoYoutube}
-                        />
-                    </a>
+                <div className=" justify-content-center">
+                        <div>
+                            <p className="px-2 text-center">
+                                Si perteneces a algún medio de comunicación o te dedicas al mundo de la comunicación, ya puedes soicitaro.
+                            </p>
+                            <p className="px-2 text-center">
+                                OBTÉN NUESTRO PASE DE PRENSA Y CUBRE NUESTROS EVENTOS.
+                            </p>
+                        </div>
                 </div>
 
                 {/*<!-- Contact Section Form-->*/}
@@ -151,7 +135,7 @@ export const ContactUs = () => {
                                     placeholder="Enter your name..."
                                     data-sb-validations="required"
                                 />
-                                <label htmlFor="name">Nombre</label>
+                                <label htmlFor="name">Nombre Completo</label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="name:required"
@@ -159,21 +143,21 @@ export const ContactUs = () => {
                                     Un nombre es requerido.
                                 </div>
                             </div>
-                            {/*<!-- Apellido input-->*/}
+                            {/*<!-- Medio de Comunicaion input-->*/}
                             <div className="form-floating mb-3">
                                 <input
                                     className="form-control"
-                                    name="surname"
+                                    name="medioDeComunicacion"
                                     type="text"
                                     placeholder="Enter your apellido..."
                                     data-sb-validations="required"
                                 />
-                                <label htmlFor="surname">Apellido</label>
+                                <label htmlFor="medioDeComunicacion">Medio de Comunicaión</label>
                                 <div
                                     className="invalid-feedback"
-                                    data-sb-feedback="surname:required"
+                                    data-sb-feedback="medioDeComunicacion:required"
                                 >
-                                    Un apellido es requerido.
+                                    Un medio de Comunicaión es requerido.
                                 </div>
                             </div>
                             {/*<!-- Email address input-->*/}
@@ -199,42 +183,90 @@ export const ContactUs = () => {
                                     El email no es valido.
                                 </div>
                             </div>
-                            {/*<!-- Asunto number input-->*/}
+                            {/*<!-- Acreditacion input-->*/}
                             <div className="form-floating mb-3">
                                 <input
                                     className="form-control"
-                                    name="asunto"
-                                    type="text"
-                                    placeholder="Enter your apellido..."
+                                    name="acreditacion"
+                                    type="select"
+                                    placeholder="Enter your Acreditacion..."
                                     data-sb-validations="required"
                                 />
-                                <label htmlFor="asunto">Asunto</label>
+                                <label htmlFor="acreditacion">Tipo de acreditación</label>
                                 <div
                                     className="invalid-feedback"
-                                    data-sb-feedback="asunto:required"
+                                    data-sb-feedback="acreditacion:required"
                                 >
-                                    Un asunto es requerido
+                                    Una Acreditacion es requerida
                                 </div>
                             </div> 
-                            {/*<!-- Message input-->*/}
+                            {/*<!-- Freelance input-->*/}
+                            <div className="form-floating mb-3">
+                                <input
+                                    className="form-control"
+                                    name="freelance"
+                                    type="select"
+                                    placeholder="Enter your Freelance..."
+                                    data-sb-validations="required"
+                                />
+                                <label htmlFor="freelance">Eres Freelance?</label>
+                            </div> 
+                            {/*<!-- Red Social input-->*/}
+                            <div className="form-floating mb-3">
+                                <label htmlFor="redSocial">Déjanos tu web y/o redes sociales</label>
+                                <input
+                                    className="form-control"
+                                    name="redSocial"
+                                    type="text"
+                                    placeholder="Enter your redSocial..."
+                                    data-sb-validations="required"
+                                />
+                                <div
+                                    className="invalid-feedback"
+                                    data-sb-feedback="redSocial:required"
+                                >
+                                    Una redSocial es requerida
+                                </div>
+                            </div> 
+                            {/*<!-- ConciertoInteresado input-->*/}
+                            <div className="form-floating mb-3">
+                                <label htmlFor="conciertoInteresado">A qué concierto estás interesado/a acudir?</label>
+                                <input
+                                    className="form-control"
+                                    name="conciertoInteresado"
+                                    type="text"
+                                    placeholder="Enter your redSocial..."
+                                    data-sb-validations="required"
+                                />
+                                <div
+                                    className="invalid-feedback"
+                                    data-sb-feedback="conciertoInteresado:required"
+                                >
+                                    Un Concierto Interesado es requerido
+                                </div>
+                            </div> 
+                            {/*<!-- Observaciones input-->*/}
                             <div className="form-floating mb-3">
                                 <textarea
                                     className="form-control"
-                                    name="mensaje"
+                                    name="observaciones"
                                     type="text"
                                     defaultValue=""
-                                    placeholder="Enter your message here..."
+                                    placeholder="Enter your Observaciones here..."
                                     data-sb-validations="required"
                                     id="text-area"
                                 ></textarea>
-                                <label htmlFor="message">Mensaje</label>
+                                <label htmlFor="observaciones">Observaciones</label>
                                 <div
                                     className="invalid-feedback"
-                                    data-sb-feedback="message:required"
+                                    data-sb-feedback="observaciones:required"
                                 >
-                                    Un mensaje es requerido.
+                                    Una Observacion es requerida.
                                 </div>
                             </div>
+
+
+
                             {/*<!-- Submit success message-->*/}
                             {/*<!---->*/}
                             {/*<!-- This is what your users will see when the form-->*/}
