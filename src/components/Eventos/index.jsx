@@ -1,220 +1,45 @@
-import iconoLugar from "../../assets/img/icono-lugar.svg"
-import iconoTicket from "../../assets/img/icono-ticket.svg"
+import ciro from "../../assets/images/ciro1.jpg"
+import cris from "../../assets/images/cristianpinto.jpg"
+import verEvento from "../../assets/img/verEvento.svg"
 
 const Eventos = () => {
     return (
-        <section className="page-section portfolio bg-secundary" id="events">
-            <div className="container container-body">
-
-            <div className="meses">
-                    <div className="eventos-mes">
-                        NOV
-                    </div>
-                    <div className="eventos">
-                        <div className="evento-1">
-                            <div className="artista-nombre">
-                                Ciro
-                            </div>
-                            <div className="lugar">
-                                <div className="lugar-div">
-                                    <div className="lugar-nombre">
-                                        Gira españa
-                                    </div>
-                                    <img src={iconoLugar} width={30} height={30} alt={iconoLugar}/>
-                                </div>
-                                <div className="lugar-div lugar-div-entrada">
-                                    <a
-                                    href="https://sfx.janto.es/"
-                                    target={'_blank'}
-                                    rel={'noreferrer'}
-                                    >
-                                        <div className="lugar-fecha">
-                                        Compr&aacute; tu entrada
-                                    </div>
-                                    <img src={iconoTicket} width={30} height={30} alt={iconoTicket}/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <section className="container-fluid">
+            <div className="row g-0">
+                <div className="col-sm">
+                    <img src={ciro} alt='ciro' className="w-100"/>
                 </div>
-
-                {/*
-                <div className="meses">
-                    <div className="eventos-mes">
-                        OCT
-                    </div>
-                    <div className="eventos">
-                        <div className="evento-1">
-                            <div className="artista-nombre">
-                                Guasones
-                            </div>
-                            <div className="lugar">
-                                <div className="lugar-div">
-                                    <div className="lugar-nombre">
-                                        barcelona, españa
-                                    </div>
-                                    <img src={iconoLugar} width={30} height={30}/>
-                                </div>
-                                <div className="lugar-div">
-                                    <div className="lugar-fecha">
-                                        Compra tu entrada
-                                    </div>
-                                    <img src={iconoTicket} width={30} height={30}/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="evento-1">
-                            <div className="artista-nombre" >
-                                Cruzando el charco
-                            </div>
-                            <div className="lugar">
-                                <div className="lugar-div">
-                                    <div className="lugar-nombre">
-                                        barcelona, españa
-                                    </div>
-                                    <img src={iconoLugar} width={30} height={30}/>
-                                </div>
-                                <div className="lugar-div">
-                                    <div className="lugar-fecha">
-                                        Compra tu entrada
-                                    </div>
-                                    <img src={iconoTicket} width={30} height={30}/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="evento-1">
-                            <div className="artista-nombre">
-                                Los Totora
-                            </div>
-                            <div className="lugar">
-                                <div className="lugar-div">
-                                    <div className="lugar-nombre">
-                                        barcelona, españa
-                                    </div>
-                                    <img src={iconoLugar} width={30} height={30}/>
-                                </div>
-                                <div className="lugar-div">
-                                    <div className="lugar-fecha">
-                                        Compra tu entrada
-                                    </div>
-                                    <img src={iconoTicket} width={30} height={30}/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div className="col-sm">
+                    <h1 className="m-2 title-artist">CIRO Y LOS PERSAS</h1>
+                    <h4 className="m-2 title-artist">4 de Octubre / Barcelona Tour</h4>
+                    <a href="https://www.instagram.com/2222agencia/" target={"_blank"} rel={"noreferrer"}>
+                    <img
+                        src={verEvento}
+                        width={60}
+                        height={60}
+                        alt={verEvento}
+                        />
+                    </a>
                 </div>
-                <div className="meses">
-                    <div className="eventos-mes">
-                            NOV
-                    </div>
-                    <div className="eventos">
-                            <div className="evento-1">
-                                <div className="artista-nombre">
-                                    Ciro
-                                </div>
-                                <div className="lugar">
-                                    <div className="lugar-div">
-                                        <div className="lugar-nombre">
-                                            Gira España
-                                        </div>
-                                        <img src={iconoLugar} width={30} height={30}/>
-                                    </div>
-                                    <div className="lugar-div">
-                                        <div className="lugar-fecha">
-                                            Próximamente
-                                        </div>
-                                        <img src={iconoTicket} width={30} height={30}/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="evento-1">
-                                <div className="artista-nombre">
-                                    Colour Fools
-                                </div>
-                                <div className="lugar">
-                                    <div className="lugar-div">
-                                        <div className="lugar-nombre">
-                                            barcelona, españa
-                                        </div>
-                                        <img src={iconoLugar} width={30} height={30}/>
-                                    </div>
-                                    <div className="lugar-div">
-                                        <div className="lugar-fecha">
-                                            Próximamente
-                                        </div>
-                                        <img src={iconoTicket} width={30} height={30}/>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-                <div className="meses">
-                    <div className="eventos-mes">
-                            DIC
-                    </div>
-                    <div className="eventos">
-                            <div className="evento-1">
-                                <div className="artista-nombre">
-                                    Polina Grace
-                                </div>
-                                <div className="lugar">
-                                    <div className="lugar-div">
-                                        <div className="lugar-nombre">
-                                            barcelona, españa
-                                        </div>
-                                        <img src={iconoLugar} width={30} height={30}/>
-                                    </div>
-                                    <div className="lugar-div">
-                                        <div className="lugar-fecha">
-                                            Próximamente
-                                        </div>
-                                        <img src={iconoTicket} width={30} height={30}/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="evento-1">
-                                <div className="artista-nombre">
-                                    Morus Alba
-                                </div>
-                                <div className="lugar">
-                                    <div className="lugar-div">
-                                        <div className="lugar-nombre">
-                                            Sala Apolo, Barcelona
-                                        </div>
-                                        <img src={iconoLugar} width={30} height={30}/>
-                                    </div>
-                                    <div className="lugar-div">
-                                        <div className="lugar-fecha">
-                                            Próximamente
-                                        </div>
-                                        <img src={iconoTicket} width={30} height={30}/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="evento-1">
-                                <div className="artista-nombre">
-                                    Valentina Olguin
-                                </div>
-                                <div className="lugar">
-                                    <div className="lugar-div">
-                                        <div className="lugar-nombre">
-                                            Sala Apolo, Barcelona
-                                        </div>
-                                        <img src={iconoLugar} width={30} height={30}/>
-                                    </div>
-                                    <div className="lugar-div">
-                                        <div className="lugar-fecha">
-                                            Próximamente
-                                        </div>
-                                        <img src={iconoTicket} width={30} height={30}/>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-                */}
             </div>
+            <div className="row g-0">
+                <div className="col-sm">
+                    <img src={cris} alt='ciro' className="w-100"/>
+                </div>
+                <div className="col-sm">
+                    <h1 className="m-2 title-artist">CIRO Y LOS PERSAS</h1>
+                    <h4 className="m-2 title-artist">4 de Octubre / Barcelona Tour</h4>
+                    <a href="https://www.instagram.com/2222agencia/" target={"_blank"} rel={"noreferrer"}>
+                    <img
+                        src={verEvento}
+                        width={60}
+                        height={60}
+                        alt={verEvento}
+                        />
+                    </a>
+                </div>
+            </div>
+
         </section>
     )
 }

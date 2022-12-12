@@ -27,7 +27,7 @@ const Nav = () => {
                 width={90}
                 height={45}
                 onClick={() => {
-                    navigate("/festival")
+                    navigate("/inicio")
                 }}
             />
             <img
@@ -37,7 +37,7 @@ const Nav = () => {
                 width={132}
                 height={40}
                 onClick={() => {
-                    navigate("/festival")
+                    navigate("/inicio")
                 }}
             />
             <div className="collapse navbar-collapse" id="navbarResponsive">
@@ -91,51 +91,49 @@ const Nav = () => {
                             </button>
                         )}
                     </li>
-
                     <li className="nav-link mx-0 mx-lg-1">
                         {isTabletOrMobile ? (
                             <button
                                 className="nav-link"
                                 onClick={() => {
-                                    navigate("/fechas")
+                                    navigate("/eventos")
                                 }}
                                 data-bs-toggle="collapse"
                                 data-bs-target="#navbarResponsive"
                             >
-                                Eventos Realizados
+                                Proximas Fechas
                             </button>
                         ) : (
                             <button
                                 className="nav-link"
                                 onClick={() => {
-                                    navigate("/fechas")
+                                    navigate("/eventos")
                                 }}
                             >
-                                Eventos Realizados
+                                Proximas Fechas
                             </button>
                         )}
                     </li>
-
                     <li className="nav-link mx-0 mx-lg-1">
                         {isTabletOrMobile ? (
                             <button
                                 className="nav-link"
                                 onClick={() => {
-                                    navigate("/eventos")
+                                    navigate("/fechas")
                                 }}
                                 data-bs-toggle="collapse"
                                 data-bs-target="#navbarResponsive"
                             >
-                                Proximas Fechas
+                                Eventos Realizados
                             </button>
                         ) : (
                             <button
                                 className="nav-link"
                                 onClick={() => {
-                                    navigate("/eventos")
+                                    navigate("/fechas")
                                 }}
                             >
-                                Proximas Fechas
+                                Eventos Realizados
                             </button>
                         )}
                     </li>
@@ -186,7 +184,7 @@ const Nav = () => {
                             </button>
                         )}
                     </li>
-                    <li className="nav-link mx-0 mx-lg-1">
+                        <li className="nav-link mx-0 mx-lg-1">
                         {isTabletOrMobile ? (
                             <button
                                 className="nav-link"
