@@ -29,13 +29,8 @@
 a:hover {
     opacity: 70%;
 }
-#ciro {
-    background-image: url("../../assets/images/ciro1.jpg");
-  /* Full height */
-  height: 100%;
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#blanco {
+    background-color: white;
+    h1,h4,p{color: black;}
 }

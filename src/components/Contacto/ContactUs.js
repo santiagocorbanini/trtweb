@@ -4,6 +4,7 @@ import swal from "sweetalert"
 import iconoInstagram from "../../assets/img/icono-instagram-contacto.svg"
 import iconoSpotify from "../../assets/img/icono-spotify-contacto.svg"
 import iconoYoutube from "../../assets/img/icono-youtube-contacto.svg"
+import enviarMail from "../../assets/img/enviarMail.svg"
 
 
 export const ContactUs = () => {
@@ -98,34 +99,6 @@ export const ContactUs = () => {
     return (
         <section className="page-section" id="contact">
             <div className="container">
-                {/*<!-- reeemplazar con iconos con fondo blanco y sus hrefs -->*/}
-                <div className="redes-contact container d-flex justify-content-center">
-                    <a href="https://www.instagram.com/2222agencia/" target={"_blank"} rel={"noreferrer"}>
-                        <img
-                            src={iconoInstagram}
-                            width={40}
-                            height={40}
-                            alt={iconoInstagram}
-                        />
-                    </a>
-                    <a href="https://www.instagram.com/2222agencia/" target={"_blank"} rel={"noreferrer"}>
-                        <img
-                            src={iconoSpotify}
-                            width={40}
-                            height={40}
-                            alt={iconoSpotify}
-                        />
-                    </a>
-                    <a href="https://www.instagram.com/2222agencia/" target={"_blank"} rel={"noreferrer"}>
-                        <img
-                            src={iconoYoutube}
-                            width={40}
-                            height={40}
-                            alt={iconoYoutube}
-                        />
-                    </a>
-                </div>
-
                 {/*<!-- Contact Section Form-->*/}
                 <div className="row justify-content-center">
                     <div className="col-lg-8 col-xl-7">
@@ -263,11 +236,14 @@ export const ContactUs = () => {
                             {/*<!-- Submit Button-->*/}
                             <div>
                                 <button
-                                    className="btn btn-primary btn-xl"
-                                    id="submitButton"
                                     type="submit"
                                 >
-                                    ENVIAR
+                                    <img
+                                    src={enviarMail}
+                                    width={60}
+                                    height={60}
+                                    alt={enviarMail}
+                                    />
                                 </button>
                             </div>
                         </form>

@@ -1,10 +1,7 @@
 import React, { useRef } from "react"
 import emailjs from "@emailjs/browser"
 import swal from "sweetalert"
-import iconoInstagram from "../../assets/img/icono-instagram-contacto.svg"
-import iconoSpotify from "../../assets/img/icono-spotify-contacto.svg"
-import iconoYoutube from "../../assets/img/icono-youtube-contacto.svg"
-
+import enviarSolicitud from "../../assets/img/enviarSolicitud.svg"
 
 export const AcreditacionUs = () => {
     const form = useRef()
@@ -213,7 +210,6 @@ export const AcreditacionUs = () => {
                             </div> 
                             {/*<!-- Red Social input-->*/}
                             <div className="form-floating mb-3">
-                                <label htmlFor="redSocial">Déjanos tu web y/o redes sociales</label>
                                 <input
                                     className="form-control"
                                     name="redSocial"
@@ -221,6 +217,7 @@ export const AcreditacionUs = () => {
                                     placeholder="Enter your redSocial..."
                                     data-sb-validations="required"
                                 />
+                                <label htmlFor="redSocial">Déjanos tu web y/o redes sociales</label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="redSocial:required"
@@ -230,7 +227,6 @@ export const AcreditacionUs = () => {
                             </div> 
                             {/*<!-- ConciertoInteresado input-->*/}
                             <div className="form-floating mb-3">
-                                <label htmlFor="conciertoInteresado">A qué concierto estás interesado/a acudir?</label>
                                 <input
                                     className="form-control"
                                     name="conciertoInteresado"
@@ -238,6 +234,7 @@ export const AcreditacionUs = () => {
                                     placeholder="Enter your redSocial..."
                                     data-sb-validations="required"
                                 />
+                                <label htmlFor="conciertoInteresado">A qué concierto estás interesado/a acudir?</label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="conciertoInteresado:required"
@@ -295,11 +292,14 @@ export const AcreditacionUs = () => {
                             {/*<!-- Submit Button-->*/}
                             <div>
                                 <button
-                                    className="btn btn-primary btn-xl"
-                                    id="submitButton"
                                     type="submit"
                                 >
-                                    ENVIAR
+                                    <img
+                                    src={enviarSolicitud}
+                                    width={60}
+                                    height={60}
+                                    alt={enviarSolicitud}
+                                    />
                                 </button>
                             </div>
                         </form>

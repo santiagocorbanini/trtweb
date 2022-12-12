@@ -96,7 +96,7 @@ const Nav = () => {
                             <button
                                 className="nav-link"
                                 onClick={() => {
-                                    navigate("/eventos")
+                                    navigate("/fechas")
                                 }}
                                 data-bs-toggle="collapse"
                                 data-bs-target="#navbarResponsive"
@@ -107,7 +107,7 @@ const Nav = () => {
                             <button
                                 className="nav-link"
                                 onClick={() => {
-                                    navigate("/eventos")
+                                    navigate("/fechas")
                                 }}
                             >
                                 Proximas Fechas
@@ -119,7 +119,7 @@ const Nav = () => {
                             <button
                                 className="nav-link"
                                 onClick={() => {
-                                    navigate("/fechas")
+                                    navigate("/eventos")
                                 }}
                                 data-bs-toggle="collapse"
                                 data-bs-target="#navbarResponsive"
@@ -130,7 +130,7 @@ const Nav = () => {
                             <button
                                 className="nav-link"
                                 onClick={() => {
-                                    navigate("/fechas")
+                                    navigate("/eventos")
                                 }}
                             >
                                 Eventos Realizados
