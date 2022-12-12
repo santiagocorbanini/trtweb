@@ -2,8 +2,26 @@ import React, { useRef } from "react"
 import emailjs from "@emailjs/browser"
 import swal from "sweetalert"
 import enviarSolicitud from "../../assets/img/enviarSolicitud.svg"
+import { acreditacionesOptions, freelanceOptions } from "./options"
+import Select from "react-select"
 
 export const AcreditacionUs = () => {
+    // REACT-SELECT DROPDOWNs //
+
+    const customStyles = {
+        control: (base, state) => ({
+            ...base,
+            background: "#111111",
+            // Overwrittes the different states of border
+            borderColor: state.isFocused ? "white" : "white",
+            // Removes weird border around container
+            boxShadow: state.isFocused ? null : null,
+            "&:hover": {
+                // Overwrittes the different states of border
+                borderColor: state.isFocused ? "white" : "white",
+            },
+        }),
+    }
     const form = useRef()
 
     const emailVálido = (email) => {
@@ -46,11 +64,11 @@ export const AcreditacionUs = () => {
             error("Por favor, escribe un correo electrónico válido")
             form.current.email.focus()
             return false
-        //}
-        //if (!telefonoValido(form.current.telefono.value)) {
-        //    error("Por favor, escribe un número de teléfono válido")
-        //    form.current.telefono.focus()
-        //    return false
+            //}
+            //if (!telefonoValido(form.current.telefono.value)) {
+            //    error("Por favor, escribe un número de teléfono válido")
+            //    form.current.telefono.focus()
+            //    return false
         } else {
             emailjs
                 .sendForm(
@@ -97,14 +115,17 @@ export const AcreditacionUs = () => {
             <div className="container">
                 {/*<!-- reeemplazar con iconos con fondo blanco y sus hrefs -->*/}
                 <div className=" justify-content-center">
-                        <div>
-                            <p className="px-2 text-center">
-                                Si perteneces a algún medio de comunicación o te dedicas al mundo de la comunicación, ya puedes soicitaro.
-                            </p>
-                            <p className="px-2 text-center">
-                                OBTÉN NUESTRO PASE DE PRENSA Y CUBRE NUESTROS EVENTOS.
-                            </p>
-                        </div>
+                    <div>
+                        <p className="px-2 text-center">
+                            Si perteneces a algún medio de comunicación o te
+                            dedicas al mundo de la comunicación, ya puedes
+                            soicitaro.
+                        </p>
+                        <p className="px-2 text-center">
+                            OBTÉN NUESTRO PASE DE PRENSA Y CUBRE NUESTROS
+                            EVENTOS.
+                        </p>
+                    </div>
                 </div>
 
                 {/*<!-- Contact Section Form-->*/}
@@ -149,7 +170,9 @@ export const AcreditacionUs = () => {
                                     placeholder="Enter your apellido..."
                                     data-sb-validations="required"
                                 />
-                                <label htmlFor="medioDeComunicacion">Medio de Comunicaión</label>
+                                <label htmlFor="medioDeComunicacion">
+                                    Medio de Comunicaión
+                                </label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="medioDeComunicacion:required"
@@ -182,32 +205,40 @@ export const AcreditacionUs = () => {
                             </div>
                             {/*<!-- Acreditacion input-->*/}
                             <div className="form-floating mb-3">
-                                <input
+{/*                                 <input
                                     className="form-control"
                                     name="acreditacion"
                                     type="select"
                                     placeholder="Enter your Acreditacion..."
                                     data-sb-validations="required"
                                 />
-                                <label htmlFor="acreditacion">Tipo de acreditación</label>
+                                <label htmlFor="acreditacion">
+                                    Tipo de acreditación
+                                </label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="acreditacion:required"
                                 >
                                     Una Acreditacion es requerida
-                                </div>
-                            </div> 
+                                </div> */}
+                                <Select
+                                    options={acreditacionesOptions}
+                                    styles={customStyles}
+                                    placeholder="Tipo de acreditación"
+                                    name="acreditacion"
+                                    required
+                                />
+                            </div>
                             {/*<!-- Freelance input-->*/}
                             <div className="form-floating mb-3">
-                                <input
-                                    className="form-control"
+                                <Select
+                                    options={freelanceOptions}
+                                    styles={customStyles}
+                                    placeholder="¿Eres Freelancer?"
                                     name="freelance"
-                                    type="select"
-                                    placeholder="Enter your Freelance..."
-                                    data-sb-validations="required"
+                                    required
                                 />
-                                <label htmlFor="freelance">Eres Freelance?</label>
-                            </div> 
+                            </div>
                             {/*<!-- Red Social input-->*/}
                             <div className="form-floating mb-3">
                                 <input
@@ -217,14 +248,16 @@ export const AcreditacionUs = () => {
                                     placeholder="Enter your redSocial..."
                                     data-sb-validations="required"
                                 />
-                                <label htmlFor="redSocial">Déjanos tu web y/o redes sociales</label>
+                                <label htmlFor="redSocial">
+                                    Déjanos tu web y/o redes sociales
+                                </label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="redSocial:required"
                                 >
                                     Una redSocial es requerida
                                 </div>
-                            </div> 
+                            </div>
                             {/*<!-- ConciertoInteresado input-->*/}
                             <div className="form-floating mb-3">
                                 <input
@@ -234,14 +267,16 @@ export const AcreditacionUs = () => {
                                     placeholder="Enter your redSocial..."
                                     data-sb-validations="required"
                                 />
-                                <label htmlFor="conciertoInteresado">A qué concierto estás interesado/a acudir?</label>
+                                <label htmlFor="conciertoInteresado">
+                                    A qué concierto estás interesado/a acudir?
+                                </label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="conciertoInteresado:required"
                                 >
                                     Un Concierto Interesado es requerido
                                 </div>
-                            </div> 
+                            </div>
                             {/*<!-- Observaciones input-->*/}
                             <div className="form-floating mb-3">
                                 <textarea
@@ -253,7 +288,9 @@ export const AcreditacionUs = () => {
                                     data-sb-validations="required"
                                     id="text-area"
                                 ></textarea>
-                                <label htmlFor="observaciones">Observaciones</label>
+                                <label htmlFor="observaciones">
+                                    Observaciones
+                                </label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="observaciones:required"
@@ -261,8 +298,6 @@ export const AcreditacionUs = () => {
                                     Una Observacion es requerida.
                                 </div>
                             </div>
-
-
 
                             {/*<!-- Submit success message-->*/}
                             {/*<!---->*/}
@@ -291,14 +326,12 @@ export const AcreditacionUs = () => {
                             </div>
                             {/*<!-- Submit Button-->*/}
                             <div>
-                                <button
-                                    type="submit"
-                                >
+                                <button type="submit">
                                     <img
-                                    src={enviarSolicitud}
-                                    width={60}
-                                    height={60}
-                                    alt={enviarSolicitud}
+                                        src={enviarSolicitud}
+                                        width={60}
+                                        height={60}
+                                        alt={enviarSolicitud}
                                     />
                                 </button>
                             </div>
