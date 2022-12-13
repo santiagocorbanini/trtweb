@@ -116,6 +116,7 @@ export const ContactUs = () => {
                             data-sb-form-api-token="API_TOKEN"
                         >
                             {/*<!-- Name input-->*/}
+                            <label htmlFor="name">Nombre</label>
                             <div className="form-floating mb-3">
                                 <input
                                     className="form-control"
@@ -124,7 +125,6 @@ export const ContactUs = () => {
                                     placeholder="Enter your name..."
                                     data-sb-validations="required"
                                 />
-                                <label htmlFor="name">Nombre</label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="name:required"
@@ -133,6 +133,7 @@ export const ContactUs = () => {
                                 </div>
                             </div>
                             {/*<!-- Apellido input-->*/}
+                            <label htmlFor="surname">Apellido</label>
                             <div className="form-floating mb-3">
                                 <input
                                     className="form-control"
@@ -141,7 +142,6 @@ export const ContactUs = () => {
                                     placeholder="Enter your apellido..."
                                     data-sb-validations="required"
                                 />
-                                <label htmlFor="surname">Apellido</label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="surname:required"
@@ -150,6 +150,7 @@ export const ContactUs = () => {
                                 </div>
                             </div>
                             {/*<!-- Email address input-->*/}
+                            <label htmlFor="email">Email</label>
                             <div className="form-floating mb-3">
                                 <input
                                     className="form-control"
@@ -158,7 +159,6 @@ export const ContactUs = () => {
                                     placeholder="name@example.com"
                                     data-sb-validations="required,email"
                                 />
-                                <label htmlFor="email">Email</label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="email:required"
@@ -173,6 +173,7 @@ export const ContactUs = () => {
                                 </div>
                             </div>
                             {/*<!-- Asunto number input-->*/}
+                            <label htmlFor="asunto">Asunto</label>
                             <div className="form-floating mb-3">
                                 <input
                                     className="form-control"
@@ -181,7 +182,6 @@ export const ContactUs = () => {
                                     placeholder="Enter your apellido..."
                                     data-sb-validations="required"
                                 />
-                                <label htmlFor="asunto">Asunto</label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="asunto:required"
@@ -190,6 +190,7 @@ export const ContactUs = () => {
                                 </div>
                             </div> 
                             {/*<!-- Message input-->*/}
+                            <label htmlFor="message">Mensaje</label>
                             <div className="form-floating mb-3">
                                 <textarea
                                     className="form-control"
@@ -200,7 +201,6 @@ export const ContactUs = () => {
                                     data-sb-validations="required"
                                     id="text-area"
                                 ></textarea>
-                                <label htmlFor="message">Mensaje</label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="message:required"

@@ -58,7 +58,7 @@ const Footer = () => {
                     </div>
                     {/*<!-- Footer festival Text-->*/}
                     <div className="col-lg-6">
-                        <img src={newLogo} alt="2222 Agencia" width={100} />
+                        <img src={newLogo} alt="TRT Producciones" width={100} />
                         <p className="lead mb1">Barcelona, España.</p>
                         <a
                             className="btn btn-outline-light btn-social mx-1 mt-3"

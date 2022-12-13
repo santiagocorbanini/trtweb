@@ -145,6 +145,7 @@ export const AcreditacionUs = () => {
                             data-sb-form-api-token="API_TOKEN"
                         >
                             {/*<!-- Name input-->*/}
+                            <label htmlFor="name">Nombre Completo</label>
                             <div className="form-floating mb-3">
                                 <input
                                     className="form-control"
@@ -153,7 +154,6 @@ export const AcreditacionUs = () => {
                                     placeholder="Enter your name..."
                                     data-sb-validations="required"
                                 />
-                                <label htmlFor="name">Nombre Completo</label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="name:required"
@@ -162,6 +162,9 @@ export const AcreditacionUs = () => {
                                 </div>
                             </div>
                             {/*<!-- Medio de Comunicaion input-->*/}
+                            <label htmlFor="medioDeComunicacion">
+                                    Medio de Comunicaión
+                            </label>
                             <div className="form-floating mb-3">
                                 <input
                                     className="form-control"
@@ -170,9 +173,6 @@ export const AcreditacionUs = () => {
                                     placeholder="Enter your apellido..."
                                     data-sb-validations="required"
                                 />
-                                <label htmlFor="medioDeComunicacion">
-                                    Medio de Comunicaión
-                                </label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="medioDeComunicacion:required"
@@ -181,6 +181,7 @@ export const AcreditacionUs = () => {
                                 </div>
                             </div>
                             {/*<!-- Email address input-->*/}
+                            <label htmlFor="email">Email</label>
                             <div className="form-floating mb-3">
                                 <input
                                     className="form-control"
@@ -189,7 +190,6 @@ export const AcreditacionUs = () => {
                                     placeholder="name@example.com"
                                     data-sb-validations="required,email"
                                 />
-                                <label htmlFor="email">Email</label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="email:required"
@@ -204,7 +204,8 @@ export const AcreditacionUs = () => {
                                 </div>
                             </div>
                             {/*<!-- Acreditacion input-->*/}
-                            <div className="form-floating mb-3">
+                            <label htmlFor="name">Tipo de acreditación</label>
+                            <div className="form-floating mb-3 react-select">
 {/*                                 <input
                                     className="form-control"
                                     name="acreditacion"
@@ -224,22 +225,28 @@ export const AcreditacionUs = () => {
                                 <Select
                                     options={acreditacionesOptions}
                                     styles={customStyles}
-                                    placeholder="Tipo de acreditación"
+                                    className="form-floating mb-3 react-select"
+                                    placeholder="Selecciona.."
                                     name="acreditacion"
+                                    id="react-select"
                                     required
                                 />
                             </div>
                             {/*<!-- Freelance input-->*/}
+                            <label htmlFor="name">¿Eres Freelancer?</label>
                             <div className="form-floating mb-3">
                                 <Select
                                     options={freelanceOptions}
                                     styles={customStyles}
-                                    placeholder="¿Eres Freelancer?"
+                                    placeholder="Selecciona.."
                                     name="freelance"
                                     required
                                 />
                             </div>
                             {/*<!-- Red Social input-->*/}
+                            <label htmlFor="redSocial">
+                                    Déjanos tu web y/o redes sociales
+                            </label>
                             <div className="form-floating mb-3">
                                 <input
                                     className="form-control"
@@ -248,9 +255,6 @@ export const AcreditacionUs = () => {
                                     placeholder="Enter your redSocial..."
                                     data-sb-validations="required"
                                 />
-                                <label htmlFor="redSocial">
-                                    Déjanos tu web y/o redes sociales
-                                </label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="redSocial:required"
@@ -259,6 +263,9 @@ export const AcreditacionUs = () => {
                                 </div>
                             </div>
                             {/*<!-- ConciertoInteresado input-->*/}
+                            <label htmlFor="conciertoInteresado">
+                                    A qué concierto estás interesado/a acudir?
+                            </label>
                             <div className="form-floating mb-3">
                                 <input
                                     className="form-control"
@@ -267,9 +274,6 @@ export const AcreditacionUs = () => {
                                     placeholder="Enter your redSocial..."
                                     data-sb-validations="required"
                                 />
-                                <label htmlFor="conciertoInteresado">
-                                    A qué concierto estás interesado/a acudir?
-                                </label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="conciertoInteresado:required"
@@ -278,6 +282,9 @@ export const AcreditacionUs = () => {
                                 </div>
                             </div>
                             {/*<!-- Observaciones input-->*/}
+                            <label htmlFor="observaciones">
+                                    Observaciones
+                            </label>
                             <div className="form-floating mb-3">
                                 <textarea
                                     className="form-control"
@@ -288,9 +295,6 @@ export const AcreditacionUs = () => {
                                     data-sb-validations="required"
                                     id="text-area"
                                 ></textarea>
-                                <label htmlFor="observaciones">
-                                    Observaciones
-                                </label>
                                 <div
                                     className="invalid-feedback"
                                     data-sb-feedback="observaciones:required"
