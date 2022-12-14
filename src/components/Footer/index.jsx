@@ -1,8 +1,7 @@
 import React from "react"
-import newLogo from "../../assets/img/logonew2222.png"
 import logoPampa from "../../assets/img/LogoPampaWhite.png"
+import logo from "../../assets/img/trtLogo.svg"
 import styles from "./styles.module.scss"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 
 const Footer = () => {
@@ -58,7 +57,7 @@ const Footer = () => {
                     </div>
                     {/*<!-- Footer festival Text-->*/}
                     <div className="col-lg-6">
-                        <img src={newLogo} alt="TRT Producciones" width={100} />
+                        <img src={logo} alt="TRT Producciones" width={100} />
                         <p className="lead mb1">Barcelona, España.</p>
                         <a
                             className="btn btn-outline-light btn-social mx-1 mt-3"

@@ -116,7 +116,7 @@ export const ContactUs = () => {
                             data-sb-form-api-token="API_TOKEN"
                         >
                             {/*<!-- Name input-->*/}
-                            <label htmlFor="name">Nombre</label>
+                            <label className="mb-2" htmlFor="name">Nombre</label>
                             <div className="form-floating mb-3">
                                 <input
                                     className="form-control"
@@ -133,7 +133,7 @@ export const ContactUs = () => {
                                 </div>
                             </div>
                             {/*<!-- Apellido input-->*/}
-                            <label htmlFor="surname">Apellido</label>
+                            <label className="mb-2" htmlFor="surname">Apellido</label>
                             <div className="form-floating mb-3">
                                 <input
                                     className="form-control"
@@ -150,7 +150,7 @@ export const ContactUs = () => {
                                 </div>
                             </div>
                             {/*<!-- Email address input-->*/}
-                            <label htmlFor="email">Email</label>
+                            <label className="mb-2" htmlFor="email">Email</label>
                             <div className="form-floating mb-3">
                                 <input
                                     className="form-control"
@@ -173,7 +173,7 @@ export const ContactUs = () => {
                                 </div>
                             </div>
                             {/*<!-- Asunto number input-->*/}
-                            <label htmlFor="asunto">Asunto</label>
+                            <label className="mb-2" htmlFor="asunto">Asunto</label>
                             <div className="form-floating mb-3">
                                 <input
                                     className="form-control"
@@ -190,7 +190,7 @@ export const ContactUs = () => {
                                 </div>
                             </div> 
                             {/*<!-- Message input-->*/}
-                            <label htmlFor="message">Mensaje</label>
+                            <label className="mb-2" htmlFor="message">Mensaje</label>
                             <div className="form-floating mb-3">
                                 <textarea
                                     className="form-control"

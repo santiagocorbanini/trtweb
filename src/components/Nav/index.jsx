@@ -1,9 +1,13 @@
 import logo from "../../assets/img/trtLogo.svg"
-import newLogo from "../../assets/img/logonew2222.png"
+import Instagram from "../../assets/images/Logos/instagram_logo.png";
 import { useNavigate } from "react-router-dom"
 import { MediaQueries } from "../../const/BreakpointsMediaQueries"
 
 const Nav = () => {
+    const navigateTo = () => {
+        window.open('https://www.instagram.com/trtproducciones/');
+        
+    }
     const navigate = useNavigate()
     const { isTabletOrMobile } = MediaQueries()
     return (
@@ -20,7 +24,7 @@ const Nav = () => {
             >
                 =
             </button>
-             <img
+            <img
                 src={logo}
                 alt={logo}
                 id="logo-responsive"
@@ -184,7 +188,7 @@ const Nav = () => {
                             </button>
                         )}
                     </li>
-                        <li className="nav-link mx-0 mx-lg-1">
+                    <li className="nav-link mx-0 mx-lg-1">
                         {isTabletOrMobile ? (
                             <button
                                 className="nav-link"
@@ -210,6 +214,26 @@ const Nav = () => {
                     </li>
                 </ul>
             </div>
+{/*             Chequear Logo INSTA responsive
+ */}{/*             <img
+                src={Instagram}
+                alt={Instagram}
+                id="Instagram-responsive"
+                width={20}
+                height={20}
+                onClick={() => {
+                    navigate("/inicio")
+                }}
+            /> */}
+            <img
+                src={Instagram}
+                alt={Instagram}
+                id="logoInstagram"
+                width={20}
+                height={20}
+                className='-4'
+                onClick={() => navigateTo()}
+            />
         </nav>
     )
 }
