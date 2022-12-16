@@ -1,12 +1,11 @@
 import logo from "../../assets/img/trtLogo.svg"
-import Instagram from "../../assets/images/Logos/instagram_logo.png";
+import Instagram from "../../assets/images/Logos/instagram_logo.png"
 import { useNavigate } from "react-router-dom"
 import { MediaQueries } from "../../const/BreakpointsMediaQueries"
 
 const Nav = () => {
     const navigateTo = () => {
-        window.open('https://www.instagram.com/trtproducciones/');
-        
+        window.open("https://www.instagram.com/trtproducciones/")
     }
     const navigate = useNavigate()
     const { isTabletOrMobile } = MediaQueries()
@@ -164,10 +163,47 @@ const Nav = () => {
                             </button>
                         )}
                     </li>
+                    {/* -------------------------------------- */}
+                    <li class="dropdown">
+                        <button
+                            class="nav-link dropdown-toggle"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            id="dropdown-navbar"
+                        >
+                            CONTACTO
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <button
+                                    className="dropdown-item"
+                                    id="contact-buton"
+                                    onClick={() => {
+                                        navigate("/contacto")
+                                    }}
+                                >
+                                    Contacto
+                                </button>
+                            </li>
+                            <button
+                                className="dropdown-item"
+                                id="contact-buton"
+                                onClick={() => {
+                                    navigate("/acreditacion")
+                                }}
+                            >
+                                Acreditaciones
+                            </button>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                    {/* -------------------------------------- */}
                     <li className="nav-link mx-0 mx-lg-1">
                         {isTabletOrMobile ? (
                             <button
-                                className="nav-link"
+                                className="nav-link items-contacto"
                                 onClick={() => {
                                     navigate("/contacto")
                                 }}
@@ -177,21 +213,13 @@ const Nav = () => {
                                 Contacto
                             </button>
                         ) : (
-                            <button
-                                className="nav-link"
-                                id="contact-buton"
-                                onClick={() => {
-                                    navigate("/contacto")
-                                }}
-                            >
-                                Contacto
-                            </button>
+                            <></>
                         )}
                     </li>
                     <li className="nav-link mx-0 mx-lg-1">
                         {isTabletOrMobile ? (
                             <button
-                                className="nav-link"
+                                className="nav-link items-contacto"
                                 onClick={() => {
                                     navigate("/acreditacion")
                                 }}
@@ -201,21 +229,14 @@ const Nav = () => {
                                 Acreditacion
                             </button>
                         ) : (
-                            <button
-                                className="nav-link"
-                                id="contact-buton"
-                                onClick={() => {
-                                    navigate("/acreditacion")
-                                }}
-                            >
-                                Acreditacion
-                            </button>
+                            <></>
                         )}
                     </li>
                 </ul>
             </div>
-{/*             Chequear Logo INSTA responsive
- */}{/*             <img
+            {/*             Chequear Logo INSTA responsive
+             */}
+            {/*             <img
                 src={Instagram}
                 alt={Instagram}
                 id="Instagram-responsive"
@@ -231,7 +252,7 @@ const Nav = () => {
                 id="logoInstagram"
                 width={20}
                 height={20}
-                className='-4'
+                className="-4"
                 onClick={() => navigateTo()}
             />
         </nav>

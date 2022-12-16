@@ -38,6 +38,26 @@
     justify-content: center;
 }
 
+.dropdown {
+  color: var(--WhiteColor);
+  font-weight: 200;
+  font-size: .85em;
+  text-transform: uppercase;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+.dropdown:active {
+  color: #bbbbbb !important;
+}
+.dropdown:hover {
+color: (#a4a4a4);
+}
+.dropdown:focus {
+  color: white;
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+}
+
 .nav-link {
   color: var(--WhiteColor);
   font-weight: 200;
@@ -64,6 +84,30 @@ button {
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px;
+}
+
+.dropdown-item {
+  color: var(--WhiteColor);
+  font-weight: 200;
+  font-size: .85em;
+  text-transform: uppercase;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+.dropdown-item:active {
+  color: #bbbbbb !important;
+}
+.dropdown-item:hover {
+color: (#a4a4a4);
+}
+.dropdown-item:focus {
+  color: white;
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+}
+
+.dropdown-menu {
+  background: var(--BlackColor) !important;
 }
 
 .logo-container {
@@ -96,4 +140,20 @@ button {
 #logoInstagram {
   margin-right: 30px;
   cursor: pointer;
+}
+
+@media only screen and (max-width:992px){
+  #dropdown-navbar{
+      display:none;
+  }
+}
+
+@media only screen and (min-width:992px){
+  .items-contacto{
+      display:none;
+  }
+}
+
+.navbar-nav {
+  align-items: center;
 }
