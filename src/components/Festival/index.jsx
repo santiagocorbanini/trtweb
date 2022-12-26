@@ -1,6 +1,3 @@
-import ciro from "../../assets/images/ciro1.jpg"
-import cris from "../../assets/images/cristianpinto.jpg"
-
 const Festival = () => {
     return (
         <section

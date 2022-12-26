@@ -1,4 +1,3 @@
-import ToggleDisplay from "react-toggle-display"
 import { useState } from "react"
 import { MediaQueries } from "../../const/BreakpointsMediaQueries"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
