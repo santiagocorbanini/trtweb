@@ -72,6 +72,7 @@ export default function AcreditacionTest(props) {
                                     id="name"
                                     value={formik.values.name}
                                     onChange={formik.handleChange}
+                                    placeholder="Ingresá tu nombre"
                                 />
                                 {formik.errors.name && formik.touched.name && (
                                     <p className="mt-1">{formik.errors.name}</p>
@@ -89,6 +90,7 @@ export default function AcreditacionTest(props) {
                                     id="medioDeComunicacion"
                                     value={formik.values.medioDeComunicacion}
                                     onChange={formik.handleChange}
+                                    placeholder="Ingresá un Medio de Comunicación"
                                 />
                                 {formik.errors.medioDeComunicacion &&
                                     formik.touched.medioDeComunicacion && (
@@ -182,6 +184,7 @@ export default function AcreditacionTest(props) {
                                     id="redesSociales"
                                     value={formik.values.redesSociales}
                                     onChange={formik.handleChange}
+                                    placeholder="Ingresá tus redes sociales"
                                 />
                                 {formik.errors.redesSociales &&
                                     formik.touched.redesSociales && (
@@ -202,6 +205,7 @@ export default function AcreditacionTest(props) {
                                     id="concierto"
                                     value={formik.values.concierto}
                                     onChange={formik.handleChange}
+                                    placeholder="Ingresá un concierto"
                                 />
                                 {formik.errors.concierto &&
                                     formik.touched.concierto && (
@@ -213,13 +217,15 @@ export default function AcreditacionTest(props) {
                             {/* ////////// OBSERVACIONES ////////// */}
                             <div className="mb-3">
                                 <label className="mb-1">Observaciones</label>
-                                <input
+                                <textarea
                                     className="form-control"
                                     type="textarea"
+                                    rows="4"
                                     name="observaciones"
                                     id="text-area"
                                     value={formik.values.observaciones}
                                     onChange={formik.handleChange}
+                                    placeholder="Ingresá tu observación"
                                 />
                                 {formik.errors.observaciones &&
                                     formik.touched.observaciones && (
