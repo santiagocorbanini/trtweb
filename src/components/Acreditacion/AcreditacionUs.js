@@ -36,7 +36,7 @@ export const AcreditacionUs = () => {
     const sendEmail = (e) => {
         e.preventDefault()
 
-        console.log(form.current.name.value)
+        console.log("aqqqqqq",form.current.observaciones.value)
         if (form.current.name.value === "") {
             error("Por favor, ingresá tu nombre")
             form.current.name.focus()
@@ -48,15 +48,9 @@ export const AcreditacionUs = () => {
             return false
         }
 
-        //if (form.current.telefono.value === "") {
-        //    error("Por favor, ingresá tu número de teléfono")
-        //    form.current.telefono.focus()
-        //    return false
-        //}
-
-        if (form.current.mensaje.value === "") {
-            error("Por favor, ingresá un mensaje")
-            form.current.mensaje.focus()
+        if (form.current.observaciones.value === "") {
+            error("Por favor, ingresá una observacion")
+            form.current.observaciones.focus()
             return false
         }
 
@@ -146,12 +140,12 @@ export const AcreditacionUs = () => {
                         >
                             {/*<!-- Name input-->*/}
                             <label className="mb-2" htmlFor="name">Nombre Completo</label>
-                            <div className="form-floating mb-3">
+                            <div className="mb-3">
                                 <input
                                     className="form-control"
                                     name="name"
                                     type="text"
-                                    placeholder="Enter your name..."
+                                    placeholder="Ingresá tu nombre"
                                     data-sb-validations="required"
                                 />
                                 <div
@@ -165,12 +159,12 @@ export const AcreditacionUs = () => {
                             <label className="mb-2" htmlFor="medioDeComunicacion">
                                     Medio de Comunicaión
                             </label>
-                            <div className="form-floating mb-3">
+                            <div className="mb-3">
                                 <input
                                     className="form-control"
                                     name="medioDeComunicacion"
                                     type="text"
-                                    placeholder="Enter your apellido..."
+                                    placeholder="Ingresá un Medio de Comunicación"
                                     data-sb-validations="required"
                                 />
                                 <div
@@ -182,12 +176,12 @@ export const AcreditacionUs = () => {
                             </div>
                             {/*<!-- Email address input-->*/}
                             <label className="mb-2" htmlFor="email">Email</label>
-                            <div className="form-floating mb-3">
+                            <div className="mb-3">
                                 <input
                                     className="form-control"
                                     name="email"
                                     type="email"
-                                    placeholder="name@example.com"
+                                    placeholder="nombre@ejemplo.com"
                                     data-sb-validations="required,email"
                                 />
                                 <div
@@ -205,7 +199,7 @@ export const AcreditacionUs = () => {
                             </div>
                             {/*<!-- Acreditacion input-->*/}
                             <label className="mb-2" htmlFor="name">Tipo de acreditación</label>
-                            <div className="form-floating mb-3 react-select">
+                            <div className="mb-3 react-select">
 {/*                                 <input
                                     className="form-control"
                                     name="acreditacion"
@@ -225,7 +219,7 @@ export const AcreditacionUs = () => {
                                 <Select
                                     options={acreditacionesOptions}
                                     styles={customStyles}
-                                    className="form-floating mb-3 react-select"
+                                    className="mb-3 react-select"
                                     placeholder="-- Selecciona --"
                                     name="acreditacion"
                                     id="react-select"
@@ -234,7 +228,7 @@ export const AcreditacionUs = () => {
                             </div>
                             {/*<!-- Freelance input-->*/}
                             <label className="mb-2" htmlFor="name">¿Eres Freelancer?</label>
-                            <div className="form-floating mb-3">
+                            <div className="mb-3">
                                 <Select
                                     options={freelanceOptions}
                                     styles={customStyles}
@@ -247,12 +241,12 @@ export const AcreditacionUs = () => {
                             <label className="mb-2" htmlFor="redSocial">
                                     Déjanos tu web y/o redes sociales
                             </label>
-                            <div className="form-floating mb-3">
+                            <div className="mb-3">
                                 <input
                                     className="form-control"
                                     name="redSocial"
                                     type="text"
-                                    placeholder="Enter your redSocial..."
+                                    placeholder="Ingresá tu red social"
                                     data-sb-validations="required"
                                 />
                                 <div
@@ -266,12 +260,12 @@ export const AcreditacionUs = () => {
                             <label className="mb-2" htmlFor="conciertoInteresado">
                                     A qué concierto estás interesado/a acudir?
                             </label>
-                            <div className="form-floating mb-3">
+                            <div className="mb-3">
                                 <input
                                     className="form-control"
                                     name="conciertoInteresado"
                                     type="text"
-                                    placeholder="Enter your redSocial..."
+                                    placeholder="Ingresá un concierto"
                                     data-sb-validations="required"
                                 />
                                 <div
@@ -285,13 +279,13 @@ export const AcreditacionUs = () => {
                             <label className="mb-2" htmlFor="observaciones">
                                     Observaciones
                             </label>
-                            <div className="form-floating mb-3">
+                            <div className="mb-3">
                                 <textarea
                                     className="form-control"
                                     name="observaciones"
                                     type="text"
                                     defaultValue=""
-                                    placeholder="Enter your Observaciones here..."
+                                    placeholder="Ingresá tu observación"
                                     data-sb-validations="required"
                                     id="text-area"
                                 ></textarea>

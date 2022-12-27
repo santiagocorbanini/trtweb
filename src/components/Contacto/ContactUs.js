@@ -153,7 +153,7 @@ export const ContactUs = () => {
                                     className="form-control"
                                     name="email"
                                     type="email"
-                                    placeholder="nombre@gmail.com"
+                                    placeholder="nombre@ejemplo.com"
                                     data-sb-validations="required,email"
                                 />
                                 <div
