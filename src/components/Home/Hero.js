@@ -17,7 +17,7 @@ const Hero = () => {
                     {/*<!-- Nosotros Descripcion -->*/}
                     <div className="col-lg-6 align-self-center" id="nosotros">
                         <div>
-                            <h3 class="text-center text-uppercase  mb-4 ">
+                            <h3 className="text-center text-uppercase  mb-4 ">
                                 Titulo para poner
                             </h3>
                             <p className="px-2 text-left">

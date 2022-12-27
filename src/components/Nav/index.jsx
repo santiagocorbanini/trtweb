@@ -164,17 +164,16 @@ const Nav = () => {
                         )}
                     </li>
                     {/* -------------------------------------- */}
-                    <li class="dropdown">
+                    <li className="dropdown">
                         <button
-                            class="nav-link dropdown-toggle"
-                            role="button"
+                            className="nav-link dropdown-toggle"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                             id="dropdown-navbar"
                         >
                             CONTACTO
                         </button>
-                        <ul class="dropdown-menu">
+                        <ul className="dropdown-menu">
                             <li>
                                 <button
                                     className="dropdown-item"
