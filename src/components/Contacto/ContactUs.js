@@ -1,9 +1,6 @@
 import React, { useRef } from "react"
 import emailjs from "@emailjs/browser"
 import swal from "sweetalert"
-import iconoInstagram from "../../assets/img/icono-instagram-contacto.svg"
-import iconoSpotify from "../../assets/img/icono-spotify-contacto.svg"
-import iconoYoutube from "../../assets/img/icono-youtube-contacto.svg"
 import enviarMail from "../../assets/img/enviarMail.svg"
 
 
@@ -34,11 +31,11 @@ export const ContactUs = () => {
             return false
         }
 
-        //if (form.current.telefono.value === "") {
-        //    error("Por favor, ingresá tu número de teléfono")
-        //    form.current.telefono.focus()
-        //    return false
-        //}
+        if (form.current.asunto.value === "") {
+            error("Por favor, ingresá tu número de teléfono")
+            form.current.asunto.focus()
+            return false
+        }
 
         if (form.current.mensaje.value === "") {
             error("Por favor, ingresá un mensaje")
@@ -58,10 +55,10 @@ export const ContactUs = () => {
         } else {
             emailjs
                 .sendForm(
-                    "service_u02fm36",
-                    "template_b0x2ya9",
+                    "service_51443zc",
+                    "template_vcgge1a",
                     form.current,
-                    "user_kSw3r88rUTBSk2tQWOdl4"
+                    "dB99EqFkUwo-b748Q"
                 )
                 .then(
                     (result) => {
@@ -82,7 +79,7 @@ export const ContactUs = () => {
                 icon: "success",
                 button: "Finalizar",
             }).then(function () {
-                window.location = "http://www.2222agencia.com"
+                window.location = "http://www.trtagencia.com"
             })
         }
 
@@ -117,12 +114,12 @@ export const ContactUs = () => {
                         >
                             {/*<!-- Name input-->*/}
                             <label className="mb-2" htmlFor="name">Nombre</label>
-                            <div className="form-floating mb-3">
+                            <div className="mb-3">
                                 <input
                                     className="form-control"
                                     name="name"
                                     type="text"
-                                    placeholder="Enter your name..."
+                                    placeholder="Ingresá tu nombre"
                                     data-sb-validations="required"
                                 />
                                 <div
@@ -134,12 +131,12 @@ export const ContactUs = () => {
                             </div>
                             {/*<!-- Apellido input-->*/}
                             <label className="mb-2" htmlFor="surname">Apellido</label>
-                            <div className="form-floating mb-3">
+                            <div className="mb-3">
                                 <input
                                     className="form-control"
                                     name="surname"
                                     type="text"
-                                    placeholder="Enter your apellido..."
+                                    placeholder="Ingresá tu apellido"
                                     data-sb-validations="required"
                                 />
                                 <div
@@ -151,12 +148,12 @@ export const ContactUs = () => {
                             </div>
                             {/*<!-- Email address input-->*/}
                             <label className="mb-2" htmlFor="email">Email</label>
-                            <div className="form-floating mb-3">
+                            <div className="mb-3">
                                 <input
                                     className="form-control"
                                     name="email"
                                     type="email"
-                                    placeholder="name@example.com"
+                                    placeholder="nombre@gmail.com"
                                     data-sb-validations="required,email"
                                 />
                                 <div
@@ -174,12 +171,12 @@ export const ContactUs = () => {
                             </div>
                             {/*<!-- Asunto number input-->*/}
                             <label className="mb-2" htmlFor="asunto">Asunto</label>
-                            <div className="form-floating mb-3">
+                            <div className="mb-3">
                                 <input
                                     className="form-control"
                                     name="asunto"
                                     type="text"
-                                    placeholder="Enter your apellido..."
+                                    placeholder="Ingresá el asunto"
                                     data-sb-validations="required"
                                 />
                                 <div
@@ -191,13 +188,13 @@ export const ContactUs = () => {
                             </div> 
                             {/*<!-- Message input-->*/}
                             <label className="mb-2" htmlFor="message">Mensaje</label>
-                            <div className="form-floating mb-3">
+                            <div className="mb-3">
                                 <textarea
                                     className="form-control"
                                     name="mensaje"
                                     type="text"
                                     defaultValue=""
-                                    placeholder="Enter your message here..."
+                                    placeholder="Ingresá tu mensaje aquí"
                                     data-sb-validations="required"
                                     id="text-area"
                                 ></textarea>
