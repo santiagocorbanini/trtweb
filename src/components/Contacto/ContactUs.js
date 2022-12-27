@@ -194,6 +194,7 @@ export const ContactUs = () => {
                                     name="mensaje"
                                     type="text"
                                     defaultValue=""
+                                    rows={4}
                                     placeholder="Ingresá tu mensaje aquí"
                                     data-sb-validations="required"
                                     id="text-area"
