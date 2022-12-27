@@ -6,6 +6,15 @@
 }
 .form-control:focus {
     background: transparent;
+    color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+    background-color: transparent !important;
 }
 
 #contactForm {
@@ -42,9 +51,9 @@ label {
     background-color: transparent !important;
 }
 
-.form-floating > .form-control, .form-floating > .form-select {
+/* .form-floating > .form-control, .form-floating > .form-select {
     height: calc(2.5rem + 2px) !important;
-}
+} */
 .css-1dimb5e-singleValue, .css-1dimb5e-singleValue{
     -webkit-text-fill-color: white;
 }

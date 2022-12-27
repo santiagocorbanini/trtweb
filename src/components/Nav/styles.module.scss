@@ -89,10 +89,10 @@ button {
 .dropdown-item {
   color: var(--WhiteColor);
   font-weight: 200;
-  font-size: .85em;
+  font-size: .75em;
   text-transform: uppercase;
   padding-right: 0rem !important;
-  padding-left: 0rem !important;
+  padding-left: 0.3rem !important;
 }
 .dropdown-item:active {
   color: #bbbbbb !important;
