@@ -4,3 +4,14 @@
     background-size: cover;
     background-position: top;
 }
+
+#botonFestival {
+    margin-top: 335px;
+}
+
+@media only screen and (min-width:1530px){
+    #botonFestival {
+        margin-bottom: 80px;
+        position: static
+    }
+}
