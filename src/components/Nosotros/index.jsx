@@ -9,27 +9,13 @@ export const Nosotros = () => {
           {/*<!-- nosotros Descripcion -->*/}
           <div className="nosotros">
             <div>
-              <p className="px-2 text-center nosotrosTexto">
+              <p className="px-2 text-left nosotrosTexto">
                 <strong>
-                  {/* 22:22 es el puente artístico entre Latinoamérica
-                                y Europa, con más de 30 años de experiencia
-                                combinada en management de artistas de primera
-                                línea, descubrimiento y desarrollo de artistas
-                                independientes, y organización de eventos
-                                musicales (desde festivales independientes hasta
-                                estadios masivos). */}
                   TRT Producciones nace en Málaga en febrero de 2019.
                 </strong>
               </p>
-              <p className="px-2 text-center nosotrosTexto">
+              <p className="px-2 text-left nosotrosTexto">
                 <strong>
-                  {/* Nos enfocamos en descubrir y desarrollar
-                                talentos emergentes (acompañándolos en el
-                                desarrollo artístico y personal), y en la
-                                organización de eventos musicales en España y
-                                Europa, apalancando nuestro portfolio de
-                                talentos y nuestros contactos con artistas
-                                consagrados en Latinoamérica. */}
                   Somos una promotora de eventos que comienza realizando shows
                   en distintas salas de la ciudad de Málaga y alrededores hasta
                   que comenzamos a colaborar en producciones de giras de
@@ -41,15 +27,25 @@ export const Nosotros = () => {
                   Aire acondicionado, Guasones, Los Totora, Cruzando el Charco,
                   Ciro y los Persas, entre otras, en ciudades como Barcelona,
                   Madrid, Valencia, Mallorca, Alicante y Málaga. <br />
-                  <br /> En 2022 realizamos <br /> <br />
-                  Gira España Maria Becerra <br /> Gira España Fundamentalistas
-                  del aire acondicionado <br />
-                  Gira España Ciro y Los Persas <br />
-                  Gira España Los Totora Maikel de la calle (Alhaurín de la
-                  torre) <br />
-                  Vilma Palma e Vampiros (Barcelona) <br />
-                  Gira España Cruzando el charco 2023 <br />
-                  “Dale! Argentina Festival” (Barcelona, Madrid, Mallorca)
+                </strong>
+              </p>
+              <p className="px-2 text-left nosotrosTexto">
+                <strong>
+                  <br />
+                  En 2022 realizamos:
+                  <br />
+                  <br />* Maria Becerra (Gira España)
+                  <br />* Fundamentalistas del aire acondicionado (Gira España)
+                  <br />* Ciro y Los Persas (Gira España)
+                  <br />* Los Totora Maikel de la calle (Gira España)
+                  <br />* Vilma Palma e Vampiros (Barcelona)
+                  <br />* Cruzando el charco (Gira España)
+                  <br />
+                  <br />
+                  En 2023:
+                  <br />
+                  <br />* “Dale! Argentina Festival” (Barcelona, Madrid,
+                  Mallorca)
                 </strong>
               </p>
             </div>
