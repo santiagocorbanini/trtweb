@@ -37,8 +37,8 @@ const Nav = () => {
                 src={logo}
                 alt={logo}
                 id="logo"
-                width={132}
-                height={40}
+                width={126}
+                height={35}
                 onClick={() => {
                     navigate("/inicio")
                 }}

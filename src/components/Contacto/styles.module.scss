@@ -2,11 +2,11 @@
     padding-bottom: 10px!important;
     background-color: transparent;
     border: 1px solid white;
-    color: white;
+    color: var(--WhiteColor);
 }
 .form-control:focus {
     background: transparent;
-    color: white;
+    color: var(--WhiteColor);
 }
 
 input:-webkit-autofill,
@@ -41,7 +41,7 @@ input[data-autocompleted] {
     margin-bottom: 50px;
 }
 label {  
-    color: white;
+    color: var(--WhiteColor);
 }
 #contact-buton:active{
     background-color: transparent !important;
@@ -51,5 +51,5 @@ label {
     height: calc(2.5rem + 2px) !important;
 } 
 .css-1dimb5e-singleValue, .css-1dimb5e-singleValue{
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: var(--WhiteColor);
 }

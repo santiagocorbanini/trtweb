@@ -1,12 +1,16 @@
 .footer {
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 2rem;
   background-color: var(--BlackColor);
-  color: #fff;
+  color: var(--WhiteColor);
 }
 .lead {
-    font-size: 0.8rem;
+    font-size: 0.45rem;
 }
-.btn-social {
-    display: inline;
+.footer-description {
+  height: 70px;
+}
+
+#copy {
+  font-size: 10px;
 }

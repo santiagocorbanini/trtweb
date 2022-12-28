@@ -9,6 +9,7 @@ const Inicio = () => {
             <div className="container-body">
                 <h1 id="title">CIRO Y LOS PERSAS BARCELONA TOUR</h1>
             </div>
+            <hr />
         </section>
     )
 }

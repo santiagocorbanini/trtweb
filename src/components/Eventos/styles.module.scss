@@ -30,7 +30,7 @@
     justify-content: flex-start;
 }
 .lugar-nombre {
-    background-color: white;
+    background-color: var(--WhiteColor);
     color: black;
     font-size: 15px;
     font-weight: 600;
@@ -38,7 +38,7 @@
     padding-left: 5px;
 }
 .lugar-fecha {
-    background-color: white;
+    background-color: var(--WhiteColor);
     color: black;
     font-size: 15px;
     font-weight: 600;
@@ -75,6 +75,6 @@ a {
     }
 }
 #blanco {
-    background-color: white;
+    background-color: var(--WhiteColor);
     h1,h4,p{color: black;}
 }

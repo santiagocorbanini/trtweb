@@ -26,7 +26,7 @@
 :root {
     --FirstColor: #fbfbfb;
     --BlackColor: #111111;
-    --WhiteColor: #fbfbfb;
+    --WhiteColor: #c7c7c7;
     --Principal-fuente: 'Poppins', sans-serif;
     --Secundaria-fuente: "Blatant";  
     --Blatant-Bold-fuente: "BlatantBold";  
@@ -69,5 +69,27 @@ p {
 
 .btn-primary {
     color: #ff254d!important;
-    background-color: white!important;
+    background-color: var(--WhiteColor)!important;
+}
+
+// FORM INPUT'S STYLES //
+
+.form-control {
+    padding-bottom: 10px!important;
+    background-color: transparent;
+    border: 1px solid var(--WhiteColor);
+    font-size: 0.85rem;
+}
+.form-control:focus {
+    background: transparent;
+}
+
+// SOCIAL MEDIA ICONS //
+
+.btn-social {
+    color: var(--WhiteColor) !important;
+}
+
+.btn-social:hover {
+    opacity: 1% !important;
 }

@@ -12,14 +12,15 @@ export const acreditacionesOptions = [
 export const customStyles = {
     control: (base, state) => ({
         ...base,
+        fontSize: '0.85em',
         background: "#111111",
         // Overwrittes the different states of border
-        borderColor: state.isFocused ? "white" : "white",
+        borderColor: state.isFocused ? "#c7c7c7" : "#c7c7c7",
         // Removes weird border around container
         boxShadow: state.isFocused ? null : null,
         "&:hover": {
             // Overwrittes the different states of border
-            borderColor: state.isFocused ? "white" : "white",
+            borderColor: state.isFocused ? "#c7c7c7" : "#c7c7c7",
         },
     }),
 }

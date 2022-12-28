@@ -1,11 +1,4 @@
-.form-control {
-    padding-bottom: 10px!important;
-    background-color: transparent;
-    border: 1px solid white;
-}
-.form-control:focus {
-    background: transparent;
-}
+
 
 #contactForm {
     color: black;
@@ -31,11 +24,11 @@
     margin-bottom: 50px;
 }
 label {  
-    color: white;
+    color: var(--WhiteColor);
 }
 
 #react-select{  
-    color: white;
+    color: var(--WhiteColor);
 }
 
 .form-control  {

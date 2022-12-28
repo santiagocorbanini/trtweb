@@ -1,7 +1,7 @@
 .title-fecha {
     font-family: var(--Principal-fuente) !important;
     text-transform: uppercase;
-    color: white;
+    color: var(--WhiteColor);
     display: flex;
     font-weight: 200;
 
@@ -9,7 +9,7 @@
 .date-fecha {
     font-family: var(--Principal-fuente) !important;
     text-transform: uppercase;
-    color: white;
+    color: var(--WhiteColor);
     font-size: 12px;
     min-height: 30px;
     display: flex;
@@ -17,7 +17,7 @@
 }
 
 #icon:hover{
-    color: white;
+    color: var(--WhiteColor);
     transition:120ms ease-in;
 }
 .redes-sociales {
@@ -49,6 +49,6 @@ a:hover {
 }
 
 #blanco {
-    background-color: white;
+    background-color: var(--WhiteColor);
     h1,h4,p{color: black;}
 }
