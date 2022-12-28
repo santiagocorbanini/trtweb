@@ -10,11 +10,6 @@ export const ContactUs = () => {
     const emailVálido = (email) => {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
     }
-    const telefonoValido = (telefonoCorrecto) => {
-        return /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(
-            telefonoCorrecto
-        )
-    }
 
     const sendEmail = (e) => {
         e.preventDefault()

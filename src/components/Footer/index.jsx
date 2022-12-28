@@ -1,7 +1,6 @@
 import React from "react"
 import logoPampa from "../../assets/img/LogoPampaWhite.png"
 import logo from "../../assets/img/trtLogo.svg"
-import styles from "./styles.module.scss"
 
 
 const Footer = () => {

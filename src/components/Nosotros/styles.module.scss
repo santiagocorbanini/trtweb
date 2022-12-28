@@ -3,6 +3,7 @@
 }
 .nosotros {
   width: 55%;
+  text-align: left;
 }
 .col-lg-3 > img {
   margin-bottom: 20px;
@@ -15,9 +16,8 @@
   text-transform: uppercase;
   font-size: 20px;
   font-family: var(--Secundaria-fuente);
-  text-indent: 1em;
   line-height: 90%;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -28,4 +28,7 @@
     padding-left: 10%;
     padding-right: 10%;
   }
+    .nosotrosTexto {
+        font-size: 12px;
+    }
 }
