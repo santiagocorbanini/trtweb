@@ -14,8 +14,7 @@ export const Nosotros = () => {
                   TRT Producciones nace en Málaga en febrero de 2019.
                 </strong>
               </p>
-              <p className="px-2 text-left nosotrosTexto">
-                <strong>
+              <p className="px-2 text-left nosotrosTexto nosotrosParrafoTexto">
                   Somos una promotora de eventos que comienza realizando shows
                   en distintas salas de la ciudad de Málaga y alrededores hasta
                   que comenzamos a colaborar en producciones de giras de
@@ -27,7 +26,6 @@ export const Nosotros = () => {
                   Aire acondicionado, Guasones, Los Totora, Cruzando el Charco,
                   Ciro y los Persas, entre otras, en ciudades como Barcelona,
                   Madrid, Valencia, Mallorca, Alicante y Málaga. <br />
-                </strong>
               </p>
               <p className="px-2 text-left nosotrosTexto">
                 <strong>

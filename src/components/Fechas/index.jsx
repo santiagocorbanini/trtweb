@@ -37,8 +37,8 @@ const Fechas = () => {
                 </div>
                 <div className="col-sm" id="blanco">
                     <div className="col-sm" id="div-fechas">
-                        <h1 className="m-2 title-fecha">CIRO Y LOS PERSAS</h1>
-                        <h4 className="m-2 date-fecha">4 de Octubre / Barcelona Tour</h4>
+                        <h1 className="title-fecha">CIRO Y LOS PERSAS</h1>
+                        <h4 className="date-fecha">4 de Octubre / Barcelona Tour</h4>
                         <a href="https://www.instagram.com/2222agencia/" target={"_blank"} rel={"noreferrer"}>
                         <img
                             src={verEventoNegro}
@@ -56,8 +56,8 @@ const Fechas = () => {
                 </div>
                 <div className="col-sm">  
                     <div className="col-sm" id="div-fechas">
-                        <h1 className="m-2 title-fecha">CRUZANDO EL CHARCO</h1>
-                        <h4 className="m-2 date-fecha">4 de Octubre / Barcelona Tour</h4>
+                        <h1 className="title-fecha">CRUZANDO EL CHARCO</h1>
+                        <h4 className="date-fecha">4 de Octubre / Barcelona Tour</h4>
                         <a href="https://www.instagram.com/2222agencia/" target={"_blank"} rel={"noreferrer"}>
                         <img
                             src={verEventoBlanco}

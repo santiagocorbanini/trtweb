@@ -18,7 +18,7 @@ const Footer = () => {
                     </div>
                     -->*/}
                     {/*<!-- Footer Social Icons-->*/}
-                    <div className="col-lg-6 col-4 flex-column mb-5 mb-lg-0">
+                    <div className="col-lg-6 col-4 flex-column mb-4 mb-lg-0">
                         <div className="container footer-description">
                             <a
                                 href="https://www.pampacode.com"
@@ -33,11 +33,13 @@ const Footer = () => {
                                     aria-labelledby="Logo Pampa Code"
                                 />
                             </a>
+                            {/*<!-- 
                             <p className="lead mb1">
                                 <span id="copy">©</span> Junín, BA {" "}
                                 <br />
                             <span>{new Date().getFullYear()}</span>
                             </p>
+                            -->*/}
                         </div>
                         <div className="d-flex justify-content-center gap-sm-4 gap-4 gap-md-4">
                             <a
@@ -71,7 +73,9 @@ const Footer = () => {
                     <div className="col-lg-6 col-4">
                         <div className="container footer-description">
                             <img src={logo} alt="TRT Producciones" width={75} />
+                            {/*<!-- 
                             <p className="lead mb1 mt-1">Barcelona, España.</p>
+                            -->*/}
                         </div>
                         <div className="d-flex justify-content-center gap-sm-4 gap-4 gap-md-4">
                             <a
