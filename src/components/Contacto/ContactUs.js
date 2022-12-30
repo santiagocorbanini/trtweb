@@ -74,7 +74,7 @@ export const ContactUs = () => {
                 icon: "success",
                 button: "Finalizar",
             }).then(function () {
-                window.location = "http://www.trtagencia.com"
+                window.location = "http://www.trtproducciones.com"
             })
         }
 
