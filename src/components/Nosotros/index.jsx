@@ -14,7 +14,7 @@ export const Nosotros = () => {
                   TRT Producciones nace en Málaga en febrero de 2019.
                 </strong>
               </p>
-              <p className="px-2 text-left nosotrosTexto nosotrosParrafoTexto">
+              <p className="px-2 text-left nosotrosTexto" id="nosotrosParrafo">
                   Somos una promotora de eventos que comienza realizando shows
                   en distintas salas de la ciudad de Málaga y alrededores hasta
                   que comenzamos a colaborar en producciones de giras de

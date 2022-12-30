@@ -88,7 +88,7 @@ export default function ContactoForm(props) {
                             data-sb-form-api-token="API_TOKEN"
                         >
                             <div className="row">
-                                <div className="col-6">
+                                <div className="col-12 col-lg-6">
                                     {/* ////////// NAME ////////// */}
                                     <div className="mb-3">
                                         <label className="mb-1">Nombre</label>
@@ -109,7 +109,7 @@ export default function ContactoForm(props) {
                                             )}
                                     </div>
                                 </div>
-                                <div className="col-6">
+                                <div className="col-12 col-lg-6">
                                     {/* ////////// Apellido ////////// */}
                                     <div className="mb-3">
                                         <label className="mb-1">Apellido</label>
@@ -133,7 +133,7 @@ export default function ContactoForm(props) {
                             </div>
 
                             <div className="row">
-                                <div className="col-6">
+                                <div className="col-12 col-lg-6">
                                     {/* ////////// EMAIL ////////// */}
                                     <div className="mb-3">
                                         <label className="mb-1">Email</label>
@@ -154,7 +154,7 @@ export default function ContactoForm(props) {
                                             )}
                                     </div>
                                 </div>
-                                <div className="col-6">
+                                <div className="col-12 col-lg-6">
                                     {/* ////////// ASUNTO ////////// */}
                                     <div className="mb-3">
                                         <label className="mb-1">Asunto</label>
