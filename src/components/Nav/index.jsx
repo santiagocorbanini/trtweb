@@ -177,7 +177,7 @@ const Nav = () => {
                             <li>
                                 <button
                                     className="dropdown-item"
-                                    id="contact-buton"
+                                    id="contact-button"
                                     onClick={() => {
                                         navigate("/contacto")
                                     }}
@@ -187,7 +187,7 @@ const Nav = () => {
                             </li>
                             <button
                                 className="dropdown-item"
-                                id="contact-buton"
+                                id="contact-button"
                                 onClick={() => {
                                     navigate("/acreditacion")
                                 }}

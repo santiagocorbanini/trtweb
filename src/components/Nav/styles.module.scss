@@ -75,8 +75,13 @@ color: (#a4a4a4);
 .nav-link:focus {
     color: var(--WhiteColor);
     border-bottom: 1px solid white;
-    padding-bottom: 2px;
 }
+
+#contact-button:focus { 
+  color: var(--WhiteColor);
+  border-bottom: 0px solid white;
+}
+
 button {
   background-color: (var(--BlackColor));
   border: none;
