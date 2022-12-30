@@ -23,19 +23,19 @@ export default function AcreditacionTest(props) {
         },
         validationSchema: Yup.object({
             name: Yup.string()
-                .min(2, "Mininum 2 characters")
-                .max(15, "Maximum 15 characters")
-                .required("Nombre es requerido"),
+                .min(2, "Minimo 2 caracteres")
+                .max(15, "Maximo 15 caracteres")
+                .required("El nombre es requerido"),
             medioDeComunicacion: Yup.string().required(
-                "Medio de comunicación es requerido"
+                "El medio de comunicación es requerido"
             ),
             email: Yup.string()
                 .email("Formato de email inválido")
-                .required("Email es requerido"),
+                .required("El email es requerido"),
             acreditacion: Yup.string().required("Acreditación es requerido"),
             freelance: Yup.string().required("Eres Freelancer es requerido"),
             redesSociales: Yup.string().required("Redes Sociales es requerido"),
-            concierto: Yup.string().required("Concierto es requerido"),
+            concierto: Yup.string().required("Un concierto es requerido"),
             observaciones: Yup.string(),
         }),
         onSubmit: (values) => {
@@ -46,21 +46,29 @@ export default function AcreditacionTest(props) {
     return (
         <section className="page-section" id="contact">
             <div className="container">
-                <div className=" justify-content-center">
-                    <div>
-                        <p className="px-2 text-center">
-                            Si perteneces a algún medio de comunicación o te
-                            dedicas al mundo de la comunicación, ya puedes
-                            soicitaro.
-                        </p>
-                        <p className="px-2 text-center">
-                            OBTÉN NUESTRO PASE DE PRENSA Y CUBRE NUESTROS
-                            EVENTOS.
-                        </p>
+                <div className="row justify-content-center">
+                    <div className="col-lg-8 col-xl-7 d-flex justify-content-between">
+                        <div className="col-5">
+                            <span className="texto-info">
+                                Si perteneces a algún medio de comunicación o te
+                                dedicas al mundo de la comunicación,{" "}
+                                <strong>ya puedes solicitarlo.</strong>
+                            </span>
+                        </div>
+                        <div className="col-2"></div>
+                        <div className="col-5">
+                            <h3 className="text-right">
+                                OBTÉN NUESTRO PASE DE PRENSA Y CUBRE NUESTROS
+                                EVENTOS.
+                            </h3>
+                        </div>
                     </div>
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-lg-8 col-xl-7">
+                    <div className="mt-4 mb-4">
+                                <hr />
+                            </div>
                         <form onSubmit={formik.handleSubmit} id="contactForm">
                             {/* ////////// NAME ////////// */}
                             <div className="mb-3">
