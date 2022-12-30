@@ -104,7 +104,7 @@ const Nav = () => {
                                 data-bs-toggle="collapse"
                                 data-bs-target="#navbarResponsive"
                             >
-                                Proximas Fechas
+                                Próximas Fechas
                             </button>
                         ) : (
                             <button
@@ -113,7 +113,7 @@ const Nav = () => {
                                     navigate("/fechas")
                                 }}
                             >
-                                Proximas Fechas
+                                Próximas Fechas
                             </button>
                         )}
                     </li>
@@ -225,7 +225,7 @@ const Nav = () => {
                                 data-bs-toggle="collapse"
                                 data-bs-target="#navbarResponsive"
                             >
-                                Acreditacion
+                                Acreditaciones
                             </button>
                         ) : (
                             <></>

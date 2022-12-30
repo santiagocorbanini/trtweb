@@ -60,7 +60,7 @@ color: (#a4a4a4);
 
 .nav-link {
   color: var(--WhiteColor);
-  font-weight: 200;
+  font-weight: 300;
   font-size: .85em;
   text-transform: uppercase;
   padding-right: 0rem !important;
@@ -156,4 +156,9 @@ color: (#a4a4a4);
 
 .navbar-nav {
   align-items: center;
+}
+
+.dropdown-item:hover {
+  color: var(--WhiteColor);
+  background-color: rgb(44, 44, 44);
 }
