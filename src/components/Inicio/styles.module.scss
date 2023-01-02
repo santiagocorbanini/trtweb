@@ -9,16 +9,14 @@
     text-shadow: 2px 2px 0px rgba(0,0,0,0.52);
 }
 
-#botonFestival {
-    margin-top: 335px;
+#boton-festival {
+    color: white !important;
+    background: #64a9d6 !important;
+    border-color: white;
+    width: 176px;
+    height: 44px;
 }
 
-@media only screen and (min-width:1530px){
-    #botonFestival {
-        margin-bottom: 80px;
-        position: static
-    }
-}
 @media (max-width:800px){
     .page-section {
         min-height: 70vh !important;

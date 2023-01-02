@@ -3,7 +3,7 @@ import { useFormik } from "formik"
 import emailjs from "@emailjs/browser"
 import swal from "sweetalert"
 import * as Yup from "yup"
-import enviarSolicitud from "../../assets/img/enviarSolicitud.svg"
+import enviarMail from "../../assets/img/enviarMail.svg"
 
 export default function ContactoForm(props) {
     const form = useRef()
@@ -201,10 +201,10 @@ export default function ContactoForm(props) {
                             <div>
                                 <button type="submit">
                                     <img
-                                        src={enviarSolicitud}
+                                        src={enviarMail}
                                         width={60}
                                         height={60}
-                                        alt={enviarSolicitud}
+                                        alt={enviarMail}
                                     />
                                 </button>
                             </div>
