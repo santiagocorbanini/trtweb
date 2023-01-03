@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Nosotros = () => {
+export const PoliticaPrivacidad = () => {
   return (
     <section className="page-section text-white mb-0 text-center" id="about">
       {/*<!-- Imagen nosotros-->*/}
@@ -11,7 +11,7 @@ export const Nosotros = () => {
             <div>
               <p className="px-2 text-left nosotrosTexto">
                 <strong>
-                  TRT Producciones nace en Málaga en febrero de 2019.
+                PoliticaPrivacidad
                 </strong>
               </p>
               <p className="px-2 text-left nosotrosTexto" id="nosotrosParrafo">
@@ -53,4 +53,4 @@ export const Nosotros = () => {
   );
 };
 
-export default Nosotros;
+export default PoliticaPrivacidad;

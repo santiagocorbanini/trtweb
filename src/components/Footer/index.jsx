@@ -1,36 +1,73 @@
 import React from "react"
 import logoPampa from "../../assets/img/LogoPampaWhite.png"
 import logo from "../../assets/img/trtLogo.svg"
+import { useNavigate } from "react-router-dom"
 
 const Footer = () => {
+    const navigate = useNavigate()
     return (
         <footer className="footer text-center">
             <div className="container">
-                <div className="row justify-content-between">
-                    {/*<!-- Footer Location
-                    <div className="col-lg-4 mb-5 mb-lg-0">
-                        <h4 className="text-uppercase mb-4">Location</h4>
-                        <p className="lead mb-0">
-                            2215 John Daniel Drive
-                            <br />
-                            Clark, MO 65243
-                        </p>
+                <div className="row align-items-center justify-content-center p-2">                  
+                    {/*<!-- Footer festival Text-->*/}
+                    <div className="col-lg-6 col-4">
+                        <div className="justify-content-center p-2" id="trtLogo">
+                            <img src={logo} alt="TRT Producciones" width={100} />
+                            {/*<!-- 
+                            <p className="lead mb1 mt-1">Barcelona, España.</p>
+                            -->*/}
+                        </div>
+                        <div className="d-flex justify-content-center gap-sm-4 gap-4 gap-md-4">
+                            <a
+                                className="btn-social"
+                                href="https://www.instagram.com/trtproducciones/"
+                                target={"_blank"}
+                                rel="noreferrer"
+                                aria-labelledby="Instagram TRT Producciones"
+                            >
+                                <i className="fab fa-fw fa-instagram"></i>
+                            </a>
+                            <a
+                                className="btn-social"
+                                href="https://wa.me/+34667569323"
+                                target={"_blank"}
+                                rel="noreferrer"
+                                aria-labelledby="Whtatsapp TRT Producciones"
+                            >
+                                <i className="fab fa-fw fa-whatsapp"></i>
+                            </a>
+                            <a
+                                className="btn-social"
+                                href={"mailto:info@trtproducciones.com"}
+                                aria-labelledby="Email TRT Producciones"
+                            >
+                                <i className="fas fa-envelope"></i>
+                            </a>
+                        </div>
                     </div>
-                    -->*/}
-                    {/*<!-- Footer Social Icons-->*/}
-                    <div className="col-lg-6 col-4 flex-column mb-4 mb-lg-0">
-                        <div className="container footer-description">
+                </div>
+                <div className="row align-items-center justify-content-center py-3">    
+                        <div id="avisosLegales">
+                            <a onClick={() => { navigate("/avisoLegal") }}>Aviso legal</a> | 
+                            <a onClick={() => { navigate("/politicaCookies") }}> Política de cookies</a> | 
+                            <a onClick={() => { navigate("/politicaPrivacidad") }}> Política de privacidad</a> | 
+                            <a onClick={() => { navigate("/condicionesGenerales") }}> Condiciones generales de venta</a>
+                        </div>
+                </div>
+                <div className="row align-items-center justify-content-center p-2"> 
+                        <div id="pampa">
                             <a
                                 href="https://www.pampacode.com"
                                 target={"_blank"}
                                 rel="noreferrer"
                                 aria-labelledby="Web Pampa Code"
-                            >
+                            >Diseñado por 
                                 <img
                                     src={logoPampa}
                                     alt="Pampacode"
-                                    width={80}
+                                    width={45}
                                     aria-labelledby="Logo Pampa Code"
+                                    id="pampaLogo"
                                 />
                             </a>
                             {/*<!-- 
@@ -41,6 +78,7 @@ const Footer = () => {
                             </p>
                             -->*/}
                         </div>
+                        {/*<!-- 
                         <div className="d-flex justify-content-center gap-sm-4 gap-4 gap-md-4">
                             <a
                                 className="btn-social"
@@ -68,45 +106,9 @@ const Footer = () => {
                                 <i className="fas fa-envelope"></i>
                             </a>
                         </div>
-                    </div>
-                    {/*<!-- Footer festival Text-->*/}
-                    <div className="col-lg-6 col-4">
-                        <div className="container footer-description">
-                            <img src={logo} alt="TRT Producciones" width={75} />
-                            {/*<!-- 
-                            <p className="lead mb1 mt-1">Barcelona, España.</p>
-                            -->*/}
-                        </div>
-                        <div className="d-flex justify-content-center gap-sm-4 gap-4 gap-md-4">
-                            <a
-                                className="btn-social"
-                                href="https://www.instagram.com/2222agencia/"
-                                target={"_blank"}
-                                rel="noreferrer"
-                                aria-labelledby="Instargam TRT Agencia"
-                            >
-                                <i className="fab fa-fw fa-instagram"></i>
-                            </a>
-                            <a
-                                className="btn-social"
-                                href="https://wa.me/+34667569323"
-                                target={"_blank"}
-                                rel="noreferrer"
-                                aria-labelledby="Whtatsapp TRT Agencia"
-                            >
-                                <i className="fab fa-fw fa-whatsapp"></i>
-                            </a>
-                            <a
-                                className="btn-social"
-                                href={"mailto:info@2222agencia.com"}
-                                aria-labelledby="Email TRT Agencia"
-                            >
-                                <i className="fas fa-envelope"></i>
-                            </a>
-                        </div>
+                        -->*/}
                     </div>
                 </div>
-            </div>
         </footer>
     )
 }

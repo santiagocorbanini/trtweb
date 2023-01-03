@@ -12,6 +12,10 @@ import Contacto from "./components/Contacto"
 import Nosotros from "./components/Nosotros"
 import Footer from "./components/Footer"
 import Acreditacion from "./components/Acreditacion"
+import AvisoLegal from "./components/AvisoLegal"
+import PoliticaCookies from "./components/PoliticaCookies"
+import PoliticaPrivacidad from "./components/PoliticaPrivacidad"
+import CondicionesGenerales from "./components/CondicionesGenerales"
 
 const App = () => {
     return (
@@ -27,6 +31,10 @@ const App = () => {
                 <Route path="trabajos" element={<Trabajos />} />
                 <Route path="contacto" element={<Contacto />} />
                 <Route path="acreditacion" element={<Acreditacion />} />
+                <Route path="avisoLegal" element={<AvisoLegal />} />
+                <Route path="politicaCookies" element={<PoliticaCookies />} />
+                <Route path="politicaPrivacidad" element={<PoliticaPrivacidad />} />
+                <Route path="condicionesGenerales" element={<CondicionesGenerales />} />
             </Routes>
             <Footer />
         </>

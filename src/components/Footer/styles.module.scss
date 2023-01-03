@@ -14,3 +14,25 @@
 #copy {
   font-size: 10px;
 }
+
+@media only screen and (max-width: 992px) {
+    #avisosLegales {
+        font-size: 13px;
+    }
+    #pampa {
+        font-size: 8px;
+    }
+}
+
+#pampa {
+    font-size: 10px;
+    > a { color: rgb(159, 159, 159); }
+}
+
+#pampaLogo {
+    margin-left: 4px;
+}
+
+#trtLogo {
+    display: flex;
+}
