@@ -13,7 +13,7 @@ const Festival = () => {
             >
                 {/*
                 <div className="container-body">
-                    <a href="https://www.instagram.com/2222agencia/" target={"_blank"} rel={"noreferrer"}>
+                    <a href="https://www.instagram.com/trtproducciones/" target={"_blank"} rel={"noreferrer"}>
                         <img
                             src={verEventoBlanco}
                             width={60}
