@@ -8,11 +8,18 @@ const Footer = () => {
     return (
         <footer className="footer text-center">
             <div className="container">
-                <div className="row align-items-center justify-content-center p-2">                  
+                <div className="row align-items-center justify-content-center p-2">
                     {/*<!-- Footer festival Text-->*/}
                     <div className="col-lg-6 col-4">
-                        <div className="justify-content-center p-2" id="trtLogo">
-                            <img src={logo} alt="TRT Producciones" width={100} />
+                        <div
+                            className="justify-content-center p-2"
+                            id="trtLogo"
+                        >
+                            <img
+                                src={logo}
+                                alt="TRT Producciones"
+                                width={100}
+                            />
                             {/*<!-- 
                             <p className="lead mb1 mt-1">Barcelona, España.</p>
                             -->*/}
@@ -46,39 +53,70 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row align-items-center justify-content-center py-3">    
-                        <div id="avisosLegales">
-                            <a onClick={() => { navigate("/avisoLegal") }}>Aviso legal</a> | 
-                            <a onClick={() => { navigate("/politicaCookies") }}> Política de cookies</a> | 
-                            <a onClick={() => { navigate("/politicaPrivacidad") }}> Política de privacidad</a> | 
-                            <a onClick={() => { navigate("/condicionesGenerales") }}> Condiciones generales de venta</a>
-                        </div>
+                <div className="row align-items-center justify-content-center py-3">
+                    <div id="avisosLegales">
+                        <a
+                            onClick={() => {
+                                navigate("/avisoLegal")
+                            }}
+                        >
+                            Aviso legal
+                        </a>{" "}
+                        |
+                        <a
+                            onClick={() => {
+                                navigate("/politicaCookies")
+                            }}
+                        >
+                            {"  "}
+                            Política de cookies
+                        </a>{" "}
+                        |
+                        <a
+                            onClick={() => {
+                                navigate("/politicaPrivacidad")
+                            }}
+                        >
+                            {" "}
+                            Política de privacidad
+                        </a>{" "}
+                        |
+                        <a
+                            onClick={() => {
+                                navigate("/condicionesGenerales")
+                            }}
+                        >
+                            {" "}
+                            Condiciones generales de venta
+                        </a>
+                    </div>
                 </div>
-                <div className="row align-items-center justify-content-center p-2"> 
-                        <div id="pampa">
-                            <a
-                                href="https://www.pampacode.com"
-                                target={"_blank"}
-                                rel="noreferrer"
-                                aria-labelledby="Web Pampa Code"
-                            >Diseñado por 
-                                <img
-                                    src={logoPampa}
-                                    alt="Pampacode"
-                                    width={45}
-                                    aria-labelledby="Logo Pampa Code"
-                                    id="pampaLogo"
-                                />
-                            </a>
-                            {/*<!-- 
+                <div className="row align-items-center justify-content-center p-2">
+                    <div id="pampa">
+                        <a
+                            href="https://www.pampacode.com"
+                            target={"_blank"}
+                            rel="noreferrer"
+                            aria-labelledby="Web Pampa Code"
+                        >
+                            Developed by
+                            <img
+                                src={logoPampa}
+                                alt="Pampacode"
+                                width={45}
+                                aria-labelledby="Logo Pampa Code"
+                                id="pampaLogo"
+                            />
+                        </a>
+                        {/*<!-- 
                             <p className="lead mb1">
                                 <span id="copy">©</span> Junín, BA {" "}
                                 <br />
                             <span>{new Date().getFullYear()}</span>
                             </p>
                             -->*/}
-                        </div>
-                        {/*<!-- 
+                    </div>
+                    {/*<!-- 
                         <div className="d-flex justify-content-center gap-sm-4 gap-4 gap-md-4">
                             <a
                                 className="btn-social"
@@ -107,8 +145,8 @@ const Footer = () => {
                             </a>
                         </div>
                         -->*/}
-                    </div>
                 </div>
+            </div>
         </footer>
     )
 }

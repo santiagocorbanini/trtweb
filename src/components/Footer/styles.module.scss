@@ -1,6 +1,6 @@
 .footer {
-  padding-top: 2.5rem;
-  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   background-color: var(--BlackColor);
   color: var(--WhiteColor);
 }
@@ -15,17 +15,19 @@
   font-size: 10px;
 }
 
+#avisosLegales {
+    font-size: 0.75em;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 992px) {
     #avisosLegales {
-        font-size: 13px;
-    }
-    #pampa {
-        font-size: 8px;
+        font-size: 0.6em;
     }
 }
 
 #pampa {
-    font-size: 10px;
+    font-size: 0.6em;
     > a { color: rgb(159, 159, 159); }
 }
 
