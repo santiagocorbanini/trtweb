@@ -3,6 +3,13 @@ import logoPampa from "../../assets/img/LogoPampaWhite.png"
 import logo from "../../assets/img/trtLogo.svg"
 import { useNavigate } from "react-router-dom"
 
+const goToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto',
+    });
+};
+
 const Footer = () => {
     const navigate = useNavigate()
     return (
@@ -58,6 +65,7 @@ const Footer = () => {
                         <a
                             onClick={() => {
                                 navigate("/avisoLegal")
+                                goToTop();
                             }}
                         >
                             Aviso legal
@@ -66,6 +74,7 @@ const Footer = () => {
                         <a
                             onClick={() => {
                                 navigate("/politicaCookies")
+                                goToTop();
                             }}
                         >
                             {"  "}
@@ -75,6 +84,7 @@ const Footer = () => {
                         <a
                             onClick={() => {
                                 navigate("/politicaPrivacidad")
+                                goToTop();
                             }}
                         >
                             {" "}
@@ -84,6 +94,7 @@ const Footer = () => {
                         <a
                             onClick={() => {
                                 navigate("/condicionesGenerales")
+                                goToTop();
                             }}
                         >
                             {" "}
