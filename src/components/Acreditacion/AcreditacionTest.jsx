@@ -1,12 +1,15 @@
 import { useFormik } from "formik"
 import Select from "react-select"
 import * as Yup from "yup"
+import axios from 'axios'
 import {
     acreditacionesOptions,
     freelanceOptions,
     customStyles,
 } from "./options"
 import enviarSolicitud from "../../assets/img/enviarSolicitud.svg"
+
+const URL = 'https://sheet.best/api/sheets/c7bb6885-267d-474c-aa02-b1e6db08a03e';
 
 export default function AcreditacionTest(props) {
     const { setFieldValue, setFieldTouched } = props
@@ -39,8 +42,12 @@ export default function AcreditacionTest(props) {
             observaciones: Yup.string(),
         }),
         onSubmit: (values) => {
+            // FIX VALUES ON POST API CALL
             console.log(values)
-        },
+            axios.post(`${URL}`, values).then((response) => {
+                console.log(response)
+            })
+        }
     })
 
     return (
