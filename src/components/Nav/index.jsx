@@ -68,7 +68,75 @@ const Nav = () => {
                             </button>
                         )}
                     </li>
-
+                    <li className="nav-link mx-0 mx-lg-1">
+                        {isTabletOrMobile ? (
+                            <button
+                                className="nav-link"
+                                onClick={() => {
+                                    navigate("/nosotros")
+                                }}
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarResponsive"
+                            >
+                                Nosotros
+                            </button>
+                        ) : (
+                            <button
+                                className="nav-link"
+                                onClick={() => {
+                                    navigate("/nosotros")
+                                }}
+                            >
+                                Nosotros
+                            </button>
+                        )}
+                    </li>
+                    <li className="nav-link mx-0 mx-lg-1">
+                        {isTabletOrMobile ? (
+                            <button
+                                className="nav-link"
+                                onClick={() => {
+                                    navigate("/fechas")
+                                }}
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarResponsive"
+                            >
+                                Próximas Fechas
+                            </button>
+                        ) : (
+                            <button
+                                className="nav-link"
+                                onClick={() => {
+                                    navigate("/fechas")
+                                }}
+                            >
+                                Próximas Fechas
+                            </button>
+                        )}
+                    </li>
+                    <li className="nav-link mx-0 mx-lg-1">
+                        {isTabletOrMobile ? (
+                            <button
+                                className="nav-link"
+                                onClick={() => {
+                                    navigate("/eventos")
+                                }}
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarResponsive"
+                            >
+                                Eventos Realizados
+                            </button>
+                        ) : (
+                            <button
+                                className="nav-link"
+                                onClick={() => {
+                                    navigate("/eventos")
+                                }}
+                            >
+                                Eventos Realizados
+                            </button>
+                        )}
+                    </li>
                     <li className="nav-link mx-0 mx-lg-1">
                         {isTabletOrMobile ? (
                             <>
@@ -91,75 +159,6 @@ const Nav = () => {
                                 }}
                             >
                                 Festival
-                            </button>
-                        )}
-                    </li>
-                    <li className="nav-link mx-0 mx-lg-1">
-                        {isTabletOrMobile ? (
-                            <button
-                                className="nav-link"
-                                onClick={() => {
-                                    navigate("/fechas")
-                                }}
-                                data-bs-toggle="collapse"
-                                data-bs-target="#navbarResponsive"
-                            >
-                                Próximas Fechas
-                            </button>
-                        ) : (
-                            <button
-                                className="nav-link"
-                                onClick={() => {
-                                    navigate("/fechas")
-                                }}
-                            >
-                                Próximas Fechas
-                            </button>
-                        )}
-                    </li>
-                    <li className="nav-link mx-0 mx-lg-1">
-                        {isTabletOrMobile ? (
-                            <button
-                                className="nav-link"
-                                onClick={() => {
-                                    navigate("/eventos")
-                                }}
-                                data-bs-toggle="collapse"
-                                data-bs-target="#navbarResponsive"
-                            >
-                                Eventos Realizados
-                            </button>
-                        ) : (
-                            <button
-                                className="nav-link"
-                                onClick={() => {
-                                    navigate("/eventos")
-                                }}
-                            >
-                                Eventos Realizados
-                            </button>
-                        )}
-                    </li>
-                    <li className="nav-link mx-0 mx-lg-1">
-                        {isTabletOrMobile ? (
-                            <button
-                                className="nav-link"
-                                onClick={() => {
-                                    navigate("/nosotros")
-                                }}
-                                data-bs-toggle="collapse"
-                                data-bs-target="#navbarResponsive"
-                            >
-                                Nosotros
-                            </button>
-                        ) : (
-                            <button
-                                className="nav-link"
-                                onClick={() => {
-                                    navigate("/nosotros")
-                                }}
-                            >
-                                Nosotros
                             </button>
                         )}
                     </li>

@@ -38,8 +38,9 @@ const Fechas = () => {
                 <div className="col-sm" id="blanco">
                     <div className="col-sm" id="div-fechas">
                         <h1 className="title-fecha">CIRO Y LOS PERSAS</h1>
-                        <h4 className="date-fecha">4 de Octubre / Barcelona Tour</h4>
-                        <a href="https://www.instagram.com/2222agencia/" target={"_blank"} rel={"noreferrer"}>
+                        <h4 className="date-fecha">PROXIMAMENTE</h4>
+                        {/*
+                        <a href="https://www.instagram.com/trtproducciones/" target={"_blank"} rel={"noreferrer"}>
                         <img
                             src={verEventoNegro}
                             width={60}
@@ -47,6 +48,7 @@ const Fechas = () => {
                             alt={verEventoNegro}
                             />
                         </a>
+                        */}
                     </div>
                 </div>
             </div>
@@ -57,8 +59,9 @@ const Fechas = () => {
                 <div className="col-sm">  
                     <div className="col-sm" id="div-fechas">
                         <h1 className="title-fecha">CRUZANDO EL CHARCO</h1>
-                        <h4 className="date-fecha">4 de Octubre / Barcelona Tour</h4>
-                        <a href="https://www.instagram.com/2222agencia/" target={"_blank"} rel={"noreferrer"}>
+                        <h4 className="date-fecha">PROXIMAMENTE</h4>
+                        {/*
+                        <a href="https://www.instagram.com/trtproducciones/" target={"_blank"} rel={"noreferrer"}>
                         <img
                             src={verEventoBlanco}
                             width={60}
@@ -66,6 +69,7 @@ const Fechas = () => {
                             alt={verEventoBlanco}
                             />
                         </a>
+                        */}
                     </div>
                 </div>
             </div>
