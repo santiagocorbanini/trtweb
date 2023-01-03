@@ -1,5 +1,8 @@
 import ciro from "../../assets/images/ciro1.jpg"
-import cris from "../../assets/images/cristianpinto.jpg"
+import cruzando from "../../assets/images/cruzando.jpg"
+import fundamentalistas from "../../assets/images/fundamentalistas.jpg"
+import guasones from "../../assets/images/guasones.jpg"
+import lostotora from "../../assets/images/lostotora2.jpg"
 import verEventoBlanco from "../../assets/img/verEventoBlanco.svg"
 import verEventoNegro from "../../assets/img/verEventoNegro.svg"
 
@@ -34,7 +37,7 @@ const Eventos = () => {
             </div>
             <div className="row g-0">
                 <div className="col-sm">
-                    <img src={cris} alt='ciro' className="w-100"/>
+                    <img src={cruzando} alt='cruzando' className="w-100"/>
                 </div>
                 <div className="col-sm" id="blanco">
                     <div className="col-sm" id="div-fechas">
@@ -57,7 +60,7 @@ const Eventos = () => {
             </div>
             <div className="row g-0">
                 <div className="col-sm">
-                    <img src={ciro} alt='ciro' className="w-100"/>
+                    <img src={lostotora} alt='lostotora' className="w-100"/>
                 </div>
                 <div className="col-sm" id="negro">
                     <div className="col-sm" id="div-fechas">
@@ -80,7 +83,7 @@ const Eventos = () => {
             </div>
             <div className="row g-0">
                 <div className="col-sm">
-                    <img src={cris} alt='ciro' className="w-100"/>
+                    <img src={guasones} alt='guasones' className="w-100"/>
                 </div>
                 <div className="col-sm" id="blanco">
                     <div className="col-sm" id="div-fechas">
@@ -105,7 +108,7 @@ const Eventos = () => {
             </div>
             <div className="row g-0">
                 <div className="col-sm">
-                    <img src={ciro} alt='ciro' className="w-100"/>
+                    <img src={fundamentalistas} alt='fundamentalistas' className="w-100"/>
                 </div>
                 <div className="col-sm" id="negro">
                     <div className="col-sm" id="div-fechas">

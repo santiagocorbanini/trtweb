@@ -2,7 +2,7 @@ import { useState } from "react"
 import { MediaQueries } from "../../const/BreakpointsMediaQueries"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import ciro from "../../assets/images/ciro1.jpg"
-import cris from "../../assets/images/cristianpinto.jpg"
+import cruzando from "../../assets/images/cruzando.jpg"
 import verEventoBlanco from "../../assets/img/comprarTicketsBlanco.svg"
 import verEventoNegro from "../../assets/img/comprarTicketsNegro.svg"
 
@@ -54,7 +54,7 @@ const Fechas = () => {
             </div>
             <div className="row g-0">
                 <div className="col-sm">
-                    <img src={cris} alt='ciro' className="w-100"/>
+                    <img src={cruzando} alt='cruzando' className="w-100"/>
                 </div>
                 <div className="col-sm">  
                     <div className="col-sm" id="div-fechas">
