@@ -194,43 +194,9 @@ const Nav = () => {
                             >
                                 Acreditaciones
                             </button>
-                            <li></li>
-                            <li></li>
                         </ul>
                     </li>
                     {/* -------------------------------------- */}
-                    <li className="nav-link mx-0 mx-lg-1">
-                        {isTabletOrMobile ? (
-                            <button
-                                className="nav-link items-contacto"
-                                onClick={() => {
-                                    navigate("/contacto")
-                                }}
-                                data-bs-toggle="collapse"
-                                data-bs-target="#navbarResponsive"
-                            >
-                                Contacto
-                            </button>
-                        ) : (
-                            <></>
-                        )}
-                    </li>
-                    <li className="nav-link mx-0 mx-lg-1">
-                        {isTabletOrMobile ? (
-                            <button
-                                className="nav-link items-contacto"
-                                onClick={() => {
-                                    navigate("/acreditacion")
-                                }}
-                                data-bs-toggle="collapse"
-                                data-bs-target="#navbarResponsive"
-                            >
-                                Acreditaciones
-                            </button>
-                        ) : (
-                            <></>
-                        )}
-                    </li>
                 </ul>
             </div>
             {/*             Chequear Logo INSTA responsive
