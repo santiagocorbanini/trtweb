@@ -4,7 +4,7 @@ export const PoliticaCookies = () => {
   return (
     <section className="page-sectionWhite text-white mb-0 text-center">
             {/*<!-- Imagen nosotros-->*/}
-            <div className="container">
+            <div className="container px-2">
                 <div className="row row-nosotros">
                     {/*<!-- nosotros Descripcion -->*/}
                     <div className="legales">
@@ -82,16 +82,16 @@ export const PoliticaCookies = () => {
                             <p className="text-black">
                             <table class="default">
                                 <tr>
-                                    <th>Nombre</th>
-                                    <th>Proveedor</th>
-                                    <th>Tipo</th>
-                                    <th>Caducidad</th>
+                                    <th className="border p-1">Nombre</th>
+                                    <th className="border p-1">Proveedor</th>
+                                    <th className="border p-1">Tipo</th>
+                                    <th className="border p-1">Caducidad</th>
                                 </tr>
                                 <tr>
-                                    <td>PHPSESSID</td>
-                                    <td>TRTPRODUCCIONES.COM</td>
-                                    <td>HTTP</td>
-                                    <td>Sesión</td>
+                                    <td className="border p-1">PHPSESSID</td>
+                                    <td className="border p-1">TRTPRODUCCIONES.COM</td>
+                                    <td className="border p-1">HTTP</td>
+                                    <td className="border p-1">Sesión</td>
                                 </tr>
                             </table>
                             </p>
@@ -101,16 +101,16 @@ export const PoliticaCookies = () => {
                             <p className="text-black">
                             <table class="default">
                                 <tr>
-                                    <th>Nombre</th>
-                                    <th>Proveedor</th>
-                                    <th>Tipo</th>
-                                    <th>Caducidad</th>
+                                    <th className="border p-1">Nombre</th>
+                                    <th className="border p-1">Proveedor</th>
+                                    <th className="border p-1">Tipo</th>
+                                    <th className="border p-1">Caducidad</th>
                                 </tr>
                                 <tr>
-                                    <td>vuid</td>
-                                    <td>vimeo.com</td>
-                                    <td>HTTP</td>
-                                    <td>2 años</td>
+                                    <td className="border p-1">vuid</td>
+                                    <td className="border p-1">vimeo.com</td>
+                                    <td className="border p-1">HTTP</td>
+                                    <td className="border p-1">2 años</td>
                                 </tr>
                             </table>
                             </p>
@@ -118,19 +118,19 @@ export const PoliticaCookies = () => {
                                 Cookies Marketing
                             </h6>
                             <p className="text-black">
-                            <table class="default">
-                                <tr>
-                                    <th>Nombre</th>
-                                    <th>Proveedor</th>
-                                    <th>Tipo</th>
-                                    <th>Caducidad</th>
-                                </tr>
-                                <tr>
-                                    <td>WIDGET::local::assignments </td>
-                                    <td>soundcloud.com</td>
-                                    <td>HTTP</td>
-                                    <td>Persistente</td>
-                                </tr>
+                            <table border="1"  class="default">
+                                    <tr>
+                                        <th className="border p-1">Nombre</th>
+                                        <th className="border p-1">Proveedor</th>
+                                        <th className="border p-1">Tipo</th>
+                                        <th className="border p-1">Caducidad</th>
+                                    </tr>
+                                    <tr>
+                                        <td className="border p-1">WIDGET::local::assignments </td>
+                                        <td className="border p-1">soundcloud.com</td>
+                                        <td className="border p-1">HTTP</td>
+                                        <td className="border p-1">Persistente</td>
+                                    </tr>
                             </table>
                             </p>
                             <h6 className="text-black">

@@ -4,7 +4,7 @@ export const CondicionesGenerales = () => {
   return (
     <section className="page-sectionWhite text-white mb-0 text-center">
     {/*<!-- Imagen nosotros-->*/}
-        <div className="container">
+        <div className="container px-2">
             <div className="row row-nosotros">
                 {/*<!-- nosotros Descripcion -->*/}
                 <div className="legales">
