@@ -34,7 +34,8 @@ export const Nosotros = () => {
                   <br />
                   <br />* Fundamentalistas del aire acondicionado (Gira España)
                   <br />* Ciro y Los Persas (Gira España)
-                  <br />* Los Totora Maikel de la calle (Gira España)
+                  <br />* Los Totora (Gira España)
+                  <br />* Maikel de la calle (Alhaurin de la torre)
                   <br />* Vilma Palma e Vampiros (Barcelona)
                   <br />* Cruzando el charco (Gira España)
                   <br />
