@@ -1,18 +1,22 @@
+import { useRef } from "react"
 import { useFormik } from "formik"
 import Select from "react-select"
 import * as Yup from "yup"
-import axios from 'axios'
+import axios from "axios"
 import {
     acreditacionesOptions,
     freelanceOptions,
     customStyles,
 } from "./options"
+import emailjs from "@emailjs/browser"
+import swal from "sweetalert"
 import enviarSolicitud from "../../assets/img/enviarSolicitud.svg"
 
-const URL = 'https://sheet.best/api/sheets/c7bb6885-267d-474c-aa02-b1e6db08a03e';
+const URL = "https://sheet.best/api/sheets/c7bb6885-267d-474c-aa02-b1e6db08a03e"
 
 export default function AcreditacionTest(props) {
     const { setFieldValue, setFieldTouched } = props
+    const form = useRef()
     const formik = useFormik({
         initialValues: {
             name: "",
@@ -41,14 +45,53 @@ export default function AcreditacionTest(props) {
             concierto: Yup.string().required("Un concierto es requerido"),
             observaciones: Yup.string(),
         }),
-        onSubmit: (values) => {
-            // FIX VALUES ON POST API CALL
-            console.log(values)
-            axios.post(`${URL}`, values).then((response) => {
-                console.log(response)
-            })
-        }
+        onSubmit: () => {
+            sendEmail();
+        },
     })
+
+    const sendEmail = () => {
+        if (true) {
+            emailjs
+                .sendForm(
+                    "service_51443zc",
+                    "template_ql1dixa",
+                    form.current,
+                    "dB99EqFkUwo-b748Q"
+                )
+                .then(
+                    (result) => {
+                        console.log(result.text)
+                    },
+                    (error) => {
+                        console.log(error.text)
+                    }
+                )
+            success()
+        } else {
+            error()
+        }
+    }
+
+    function success() {
+        swal({
+            title: "Bien hecho!",
+            text: "El mensaje ya fue enviado. Muchas Gracias",
+            icon: "success",
+            button: "Finalizar",
+        }).then(function () {
+            window.location = "http://www.trtproducciones.com"
+        })
+    }
+
+    function error(mensaje) {
+        swal({
+            title: "Vuelva a insertar",
+            text: mensaje,
+            icon: "error",
+            button: "Volver",
+        })
+    }
 
     return (
         <section className="page-section" id="contact">
@@ -73,10 +116,15 @@ export default function AcreditacionTest(props) {
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-lg-8 col-xl-7">
-                    <div className="mt-4 mb-4">
-                                <hr />
-                            </div>
-                        <form onSubmit={formik.handleSubmit} id="contactForm">
+                        <div className="mt-4 mb-4">
+                            <hr />
+                        </div>
+                        <form
+                            onSubmit={formik.handleSubmit}
+                            ref={form}
+                            id="acreditacionesForm"
+                            data-sb-form-api-token="API_TOKEN"
+                        >
                             {/* ////////// NAME ////////// */}
                             <div className="mb-3">
                                 <label className="mb-1">Nombre</label>

@@ -5,7 +5,7 @@ import swal from "sweetalert"
 import * as Yup from "yup"
 import enviarMail from "../../assets/img/enviarMail.svg"
 
-export default function ContactoForm(props) {
+export default function ContactoForm() {
     const form = useRef()
     const formik = useFormik({
         initialValues: {
