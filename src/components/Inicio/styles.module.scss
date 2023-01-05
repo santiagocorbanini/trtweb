@@ -1,8 +1,8 @@
 #inicio {
-    background-image: url(../../assets/images/DaleFondoOk.jpg);
+    background-image: url(../../assets/images/DaleFondoOk2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
 }
 
 #title {
@@ -21,4 +21,7 @@
     .page-section {
         min-height: 70vh !important;
     }
+}
+#textInfo {
+    color: white !important;
 }

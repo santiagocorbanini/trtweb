@@ -99,7 +99,7 @@ export default function AcreditacionTest(props) {
                 <div className="row justify-content-center">
                     <div className="col-lg-8 col-xl-7 d-flex justify-content-between">
                         <div className="col-5">
-                            <span className="texto-info">
+                            <span className="texto-info" id="textInfo">
                                 Si perteneces a algún medio de comunicación o te
                                 dedicas al mundo de la comunicación,{" "}
                                 <strong>ya puedes solicitarlo.</strong>
