@@ -68,7 +68,7 @@ export const PoliticaCookies = () => {
                                 Si desea obtener más información sobre quiénes somos, cómo puede contactarnos y cómo tratamos sus datos personales, consulte nuestra Política de Privacidad.
                             </p>
                             <p className="text-black">
-                                Para cualquier duda o aclaración, los usuarios pueden ponerse en contacto con info@sfx-events.com. 
+                                Para cualquier duda o aclaración, los usuarios pueden ponerse en contacto con info@trtproducciones.com. 
                             </p>
                             <h6 className="text-black">
                                 LISTA DE COOKIES QUE UTILIZAMOS

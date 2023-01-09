@@ -41,7 +41,8 @@ const Eventos = () => {
                         </h4>
                         <h4 className="date-fecha">
                             13/11 Madrid Sala Riviera - SOLD OUT
-                        </h4>   
+                        </h4>  
+                        {/* 
                         <button onClick={setShow}>
                             <img
                                 src={verEventoBlanco}
@@ -54,6 +55,7 @@ const Eventos = () => {
                             show={show}
                             handleClose={handleClose}
                         />
+                        */}
                     </div>
                 </div>
             </div>
